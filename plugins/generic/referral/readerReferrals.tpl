@@ -10,8 +10,8 @@
  *}
 
 <div class="separator"></div>
-
-<h3>{translate key="plugins.generic.referral.referrals"}</h3>
+{* EH 2014-09-09: Adding id="readerRefbacks" to be target for a javascript that will create a "search this article on google scholar link" *}
+<h3 id="readerRefbacks">{translate key="plugins.generic.referral.referrals"}</h3>
 
 <ul class="plain">
 	{iterate from=referrals item=referral}
