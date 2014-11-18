@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * locale.xml
+  *
+  * Copyright (c) 2014 Eirik Hanssen
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the no_NO (Norwegian) locale.
+  *
+  * $Id$
+  -->
+
+<locale name="no_NO" full_name="Norwegian">
+        <message key="plugins.block.readingTools.displayName">Leserverktøy blokk</message>
+        <message key="plugins.block.readingTools.description">Dette tillegget viser en blokk med leserverktøy i reading tools sidebar.</message>
+        <message key="plugins.block.readingTools.title">Leserverktøy</message>
+        <message key="plugins.block.readingTools.aboutTheAuthor">Om forfatteren</message>
+        <message key="plugins.block.readingTools.aboutTheAuthors">Om forfatterne</message>
+        <message key="plugins.block.readingTools.articleTools">Artikkelverktøy</message>
+        <message key="plugins.block.readingTools.emailThisArticle">Email denne artikkelen</message>
+        <message key="plugins.block.readingTools.loginRequired">krever innlogging</message>
+        <message key="plugins.block.readingTools.printThisArticle">Skriv ut artikkelen</message>
+        <message key="plugins.block.readingTools.postComment">Kommentér</message>
+</locale>
+
