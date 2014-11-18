@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * locale.xml
+  *
+  * Copyright (c) 2003-2012 Eirik Hanssen 
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the no_NO (Norwegian) locale.
+  *
+  -->
+
+<locale name="no_NO" full_name="Norwegian">
+        <message key="plugins.reports.subscriptions.displayName">Abonnementstrapport</message>
+        <message key="plugins.reports.subscriptions.description">Dette tillegget kan lage en CSV fil med en liste over alle abbonementene og deres info.</mes$
+        <message key="plugins.reports.subscriptions.institutionMailingAddress">Institusjonens postadresse</message>
+        <message key="plugins.reports.subscriptions.ipRanges">IP Ranges</message>
+</locale>
