@@ -103,7 +103,7 @@
 	<message key="manager.setup.disciplineDescription">Spesielt nyttig når tidsskrift krysser grensene mellom fagfelt og/eller forfattere sender inn tverrfaglige bidrag.</message>
 	<message key="manager.setup.disciplineExamples">(For eks. historie; utdanningsvitenskap; sosiologi; psykologi; kulturstudier; statsvitenskap)</message>
 	<message key="manager.setup.disciplineProvideExamples">Gi eksempler på relevante fagemner for dette tidsskriftet</message>
-	<message key="manager.setup.displayCurrentIssue">Legg til innholdsoversikten for nyste utgave (hvis tilgjengelig).</message>
+	<message key="manager.setup.displayCurrentIssue">Legg til innholdsoversikten for nyeste utgave (hvis tilgjengelig).</message>
 	<message key="manager.setup.editorialMembers">Gå til Rådsmedlemmer og legg til redaksjonsråd- og/eller fagfellerådsmedlemmer. Dette kan ordnes når som helst i arbeidsprosessen.</message>
 	<message key="manager.setup.editorialProcess1">En eller flere redaktører håndterer de grunnleggende trinnene uten fordelte roller.</message>
 	<message key="manager.setup.editorialProcess2">Ansvarlig redaktør håndterer manuskriptarbeidskø og innholdsfortegnelse, mens seksjonsredaktører håndterer manuskriptvurdering og manuskriptbehandling.</message>
