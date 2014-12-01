@@ -16,4 +16,5 @@
 	<message key="plugins.block.navigation.displayName">Navigasjonsblokk</message>
 	<message key="plugins.block.navigation.description">Denne programutvidelsen oppretter navigasjonslenker i sidespalten.</message>
 	<message key="plugins.block.navigation.journalContent">Tidsskriftinnhold</message>
+	<message key="plugins.block.navigation.searchScope">Søkefelt</message>
 </locale>
