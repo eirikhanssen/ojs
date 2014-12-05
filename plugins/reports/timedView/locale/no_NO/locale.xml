@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/reports/timedView/locale/en_US/locale.xml
+  *
+  * Copyright (c) 2013-2014 Simon Fraser University Library
+  * Copyright (c) 2003-2014 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * (Norwegian translation from english by Eirik Hanssen, Oslo and Akershus University College of Applied Sciences, 2014 )
+  * Localization strings for the no_NO (Norwegian) locale.
+  *
+  -->
+
+<locale name="no_NO" full_name="Norwegian">
+	<message key="plugins.reports.timedView.displayName">Timed Views rapport</message>
+	<message key="plugins.reports.timedView.description">Dette tillegget kan generere en CSV rapport som beskriver hvordan/hvor mange ganger hver artikkel har blitt lest, avgrenset av et brukerdefinert tidsområde.</message>
+	<message key="plugins.reports.timedView.form.dateStartRequired">Fra-dato kreves.</message>
+	<message key="plugins.reports.timedView.form.dateStartValid">Fyll inn en gyldig fra-dato.</message>
+	<message key="plugins.reports.timedView.form.dateEndRequired">Til-dato kreves.</message>
+	<message key="plugins.reports.timedView.form.dateEndValid">Fyll inn en gyldig til-dato.</message>
+	<message key="plugins.reports.timedView.form.generate">Generér rapport</message>
+	<message key="plugins.reports.timedView.form.clearLogs">Tøm logger</message>
+	<message key="plugins.reports.timedView.form.clearLogs.description">Velg en dato for å fjerne feltene fra loggene. Alle oppføringene i loggene før valgt dato vil bli slettet. Merk at dette kun gjelder Timed Views rapporten og ikke visningstelling gjort andre steder (f.eks for det generelle Visnings tillegget).</message>
+	<message key="plugins.reports.timedView.form.clearLogs.confirm">Er du sikker på at du ønsker å slette disse oppføringene? Denne handlingen kan ikke angres.</message>
+	<message key="plugins.reports.timedView.form.useTimedViewRecords">Kryss av for å bruke statistikk hentet fra det gamle Timed Views tillegget. Hvis du ønsker å generere en Timed View rapport med de nye statistikk-dataene, ikke kryss av dette feltet.</message>
+	<message key="plugins.reports.timedView.form.largeSetOfDataIssue">Dersom en lang tidsperiode med et stort sett med statistikk-data velges vil det ta en stund før denne rapporten er ferdig. Hvis det tar for lang tid, er det mulig at du mister koblingen pga tidsavbrudd, og da vil du ikke motta rapportfilen. Dersom dette skulle skje, prøv igjen med en kortere tidsperiode.</message>
+	<message key="plugins.reports.timedView.report.articleId">Artikkel ID</message>
+	<message key="plugins.reports.timedView.report.articleTitle">Artikkel tittel</message>
+	<message key="plugins.reports.timedView.report.datePublished">Dato Publisert</message>
+	<message key="plugins.reports.timedView.report.abstractViews">Abstractvisninger</message>
+	<message key="plugins.reports.timedView.report.galleyViews">Totalt ant visninger</message>
+</locale>

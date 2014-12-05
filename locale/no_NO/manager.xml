@@ -16,6 +16,7 @@
 	<message key="manager.emails.confirmResetAll">Er du sikker på at du vil tilbakestille alle e-postmaler i dette tidsskriftet? Du vil miste alle tilpasninger du har gjort.</message>
 	<message key="manager.files.note">NB: Filutforskeren er en avansert funksjon som gir mulighet til å manipulere filene og mappene til tidsskriftet direkte.</message>
 	<message key="manager.groups">Redaksjon</message>
+	<message key="manager.groups.publishEmails">Publiser gruppens epostadresser</message>
 	<message key="manager.groups.create">Opprett redaksjonstittel</message>
 	<message key="manager.groups.disableBoard">Systemet kommer til å generere en liste over personer i redaksjonelle roller (redaksjonsleder, ansvarlig redaktør, seksjonsredaktør, manusredaktør, etc.)</message>
 	<message key="manager.groups.enableBoard">Redaksjonslederen skal opprette redaksjonstitler, og legge til brukere under hver tittel.</message>
@@ -83,7 +84,10 @@
 	<message key="manager.setup.copyediting">Manusredaktører</message>
 	<message key="manager.setup.copyeditInstructions">Instruks for manusredigering</message>
 	<message key="manager.setup.copyeditInstructionsDescription">Instruksen for manusredigering vil bli gjort tilgjengelig for manusredaktører, forfattere, og seksjonsredaktører i manusredigeringsstadiet. Nedenfor finner du standardinstruksjoner (i HTML). Disse kan omgjøres eller erstattes av redaksjonslederen når som helst (i HTML eller ren tekst).</message>
-	<message key="manager.setup.copyrightNotice">Erklæring om copyright</message>
+	<message key="manager.setup.copyrightNotice">Erklæring om opphavsrett</message>
+	<message key="manager.setup.copyrightYearBasis">Basér opphavsrettsår til ny artikkel på</message>
+	<message key="manager.setup.copyrightYearBasis.Article">Standardverdien for år blir tatt fra artikkelens publiseringsdato.</message>
+	<message key="manager.setup.copyrightYearBasis.Issue">Standardverdien for år blir tatt fra nummerets publiseringsdato.</message>
 	<message key="manager.setup.coverage">Dekning</message>
 	<message key="manager.setup.coverageChronExamples">(For eks. europeisk rennessanse; juratiden; førstesemester; tredje trimester; etc.)</message>
 	<message key="manager.setup.coverageChronProvideExamples">Gi eksempler på relevante kronologiske eller historiske termer for dette fagfeltet</message>
@@ -186,6 +190,10 @@
 	<message key="manager.setup.layoutTemplatesDescription">Maler kan lastes opp for å vises under Layout for hvert av standardformatene tidsskriftet benytter (for eks. artikkel, bokanmeldelse etc.) i filformat valgt av tidsskriftet (for eks. pdf, doc etc.) med vedlegg av merknader som spesifiserer skrifttype, størrelse, marger, etc. til veiledning for Layoutredaktører og Korrekturlesere.</message>
 	<message key="manager.setup.layoutTemplates.file">Malfil</message>
 	<message key="manager.setup.layoutTemplates.title">Tittel</message>
+	<message key="manager.setup.includeCopyrightStatement">Vis rettighetserklæringen med inndhold (tilstrekkelig for å sikre en forfatters opphavsrett).</message>
+	<message key="manager.setup.includeLicense">Vis lisensen sammen med det publiserte verket.</message>
+	<message key="manager.setup.licenseURLDescription">Angi URL til nettsiden med lisens hvis det er tilgjengelig.</message>
+
 	<message key="manager.setup.lists">Lister</message>
 	<message key="manager.setup.listsDescription">Skriv inn maksimalt antall elementer (for eksempel manuskript, brukere, eller redigeringsoppdrag) som skal vises på hver side av en liste, og antallet sider lenker som skal vises på hver side.</message>
 	<message key="manager.setup.lockssEnable"><![CDATA[Tillat LOCKSS å lagre og distribuere tidsskriftinnholdet hos tilsluttete bibliotek via et LOCKSS <a href="{$lockssUrl}" target="_blank">Utgivermanifest</a>. En LOCKSS-lisens vil i så fall bli vist i 'Om' tidsskriftet, under Arkivering:]]></message>
@@ -224,6 +232,8 @@
 	<message key="manager.setup.peerReviewDescription">Her gir du lesere og forfattere informasjon om fagvurderingsprosessen. Få med antallet fagkonsulenter som kan ventes å vurdere et manuskript, kriteriene som fagkonsulenter har å følge når de bedømmer manuskript, hvor lang tid fagfellevurderingen kan ventes å ta, og prinsippene for verving av fagkonsulenter. Dette vil bli vist i 'Om' tidsskriftet.</message>
 	<message key="manager.setup.peerReviewPolicy">Fagfellevurdering</message>
 	<message key="manager.setup.peerReviewPolicy2">Instruks for fagkonsulenter</message>
+	<message key="manager.setup.permissions.priorAgreement">Forutgående avtale</message>
+	<message key="manager.setup.permissions.display">Vis</message>
 	<message key="manager.setup.policies">Retningslinjer</message>
 	<message key="manager.setup.policies.description">Hovedfokus, fagvurdering, seksjoner, personopplysninger, sikkerhet, og øvrige Om-emner.</message>
 	<message key="manager.setup.principalContact">Hovedkontakt</message>
@@ -247,6 +257,8 @@
 	<message key="manager.setup.publisher">Utgiver</message>
 	<message key="manager.setup.publisherDescription">Navnet til organisasjonen som publiserer tidsskriftet vil bli vist i 'Om' tidsskriftet.</message>
 	<message key="manager.setup.registerJournalForIndexing">Registrer tidsskriftet for indeksering (Metadata Harvesting)</message>
+	<message key="manager.setup.resetPermissions">Nullstill artikkelrettigheter</message>
+	<message key="manager.setup.resetPermissions.description">Opphavsretts- og lisensinformasjon vil permanent bli koblet til publiserte artikler/innhold. Dette sikrer at denne informasjonen ikke vil endres for publiserte artikler i tilfelle tidsskriftet skulle endre policy for nye utgivelser i fremtiden. For å nullstille rettighetene som er lagret, bruk knappen nedenfor.</message>
 	<message key="manager.setup.restrictArticleAccess">Brukere må logge inn for å se publiserte artikler i fulltekst.</message>
 	<message key="manager.setup.restrictSiteAccess">Brukere må logge inn for å se tidsskriftets nettsted.</message>
 	<message key="manager.setup.reviewGuidelines">Instruks for fagkonsulenter</message>
@@ -309,6 +321,7 @@
 	<message key="manager.setup.useCopyeditors">Tidsskriftet kommer til å utpeke manusredaktører for bearbeiding av hvert manuskript.</message>
 	<message key="manager.setup.useEditorialReviewBoard">Tidsskriftet skal ha redaksjons- eller fagfelleråd.</message>
 	<message key="manager.setup.useImageLogo">Logobilde</message>
+	<message key="manager.setup.useThumbnail">Thumbnail</message>
 	<message key="manager.setup.useImageTitle">Tittelbilde</message>
 	<message key="manager.setup.useJournalStyleSheet">Tidsskrift stylesheet</message>
 	<message key="manager.setup.useLayoutEditors">Tidsskriftet kommer til å utpeke layoutredaktører for å lage sideoppsett i HTML, PDF, PS osv. for elektronisk publisering.</message>
@@ -318,6 +331,7 @@
 	<message key="manager.setup.volumePerYear">Utgaver per år</message>
 	<message key="manager.statistics.reports">Rapportgenerator</message>
 	<message key="manager.statistics.reports.description">OJS genererer rapporter som sporer detaljene knyttet til behandling av manuskript til tidsskriftet fra synsvinkelen til innsendte manuskript, redaktører, fagkonsulenter, og seksjoner, for en gitt periode. Rapportene blir generert i CSV-format, som man må ha regnearkprogram for å lese.</message>
+	<message key="manager.statistics.reports.generateReport">Generér en tilpasset rapport</message>
 	<message key="manager.statistics.statistics">Tidsskriftstatistikk</message>
 	<message key="manager.statistics.statistics.count.accept">Akseptert</message>
 	<message key="manager.statistics.statistics.count.decline">Avvist</message>
@@ -556,6 +570,7 @@
 	<message key="manager.setup.journalLayoutDescription">Velg et designtema og velg layout-komponenter her. Det går også an å laste opp et egenprodusert stilark for tidsskriftet (CSS-stylesheet). Dette kan i så fall overstyre både stildata i systemet og tema-stilark for designtema (hvis et tema er valgt).</message>
 	<message key="manager.setup.journalLogo.altText">Tidsskriftlogo</message>
 	<message key="manager.setup.journalTheme">Tidsskriftnettsidenes designtema.</message>
+	<message key="manager.setup.journalThumbnail">Tidsskrifts-thumbnail</message>
 	<message key="manager.setup.notifyAllAuthorsOnDecision">Når e-postfunksjonen 'Send beskjed til forfatter' brukes skal e-posten sendes til alle medforfattere, ikke bare til den forfatteren som sendte inn manuskriptet.</message>
 	<message key="manager.setup.provideRefLinkInstructions">Gi instruks for layoutredaktører</message>
 	<message key="manager.setup.publicationFormatNumber">Nummer</message>
@@ -579,6 +594,7 @@
 	<message key="manager.subscriptions.domain">Domene</message>
 	<message key="manager.subscriptions.membership">Medlemskap</message>
 	<message key="manager.language.ui">Brukergrensesnitt</message>
+	<message key="manager.language.submissions">Innsendinger</message>
 	<message key="manager.language.forms">Skjema</message>
 	<message key="manager.people.showNoRole">Vis brukere som ikke har rolle</message>
 	<message key="manager.plugins.install">Installer en ny programutvidelse</message>

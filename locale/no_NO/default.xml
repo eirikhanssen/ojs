@@ -122,6 +122,7 @@ Avsnittet som begynner med "På den annen side ..." mangler tabulatorinnrykk.]]>
 
 	<message key="section.default.title">Artikler</message>
 	<message key="section.default.abbrev">ART</message>
+	<message key="section.default.policy"></message>
 	<message key="default.journalSettings.membershipFeeDescription">Betaling av denne avgiften gir deg medlemsskap i foreningen for ett år og gir deg gratis tilgang til dette tidsskriftet.</message>
 	<message key="default.journalSettings.donationFee">Gaver til tidsskriftet</message>
 	<message key="default.journalSettings.donationFeeDescription">Gaver - uansett beløp - til tidsskriftet tas imot med glede. Gaver gir redaktørene muligheter til å fortsette å utgi et kvalitetstidsskrift, til glede for leserne.</message>

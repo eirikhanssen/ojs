@@ -16,6 +16,8 @@
 	<message key="admin.hostedJournals">Nettstedets tidsskrift</message>
 	<message key="admin.settings.journalRedirect">Tidsskriftomdirigering</message>
 	<message key="admin.settings.journalRedirectInstructions">Henvendelser til hovednettstedet vil bli omdirigert til dette tidsskriftet. Dette er nyttig hvis nettstedet for eksempel bare er vert for ett tidsskrift.</message>
+        <message key="admin.settings.security">Sikkerhet</message>
+        <message key="admin.settings.security.plugins">Forhindre redaktører fra å kunne installere, oppdatere eller slette plugins.</message>
 	<message key="admin.settings.noJournalRedirect">Ikke omdiriger</message>
 	<message key="admin.languages.primaryLocaleInstructions">Dette vil bli standard språk for nettstedet og alle de tidsskriftene det er vert for.</message>
 	<message key="admin.languages.supportedLocalesInstructions">Velg alle lokalinnstillinger som nettstedet skal støtte. De valgte lokalinnstillingene vil bli tilgjengelig til bruk for alle tidsskrift nettstedet er vert for, og de vil også bli vist i en språkvalgmeny som vil vises på hver nettstedside (men som kan overstyres på tidsskriftspesifikke sider). Hvis multiple lokalinnstillinger ikke er valgt, vil språkvekslingsmenyen ikke bli vist og utvidete språkinnstillinger vil ikke være tilgjengelig for tidsskriftet.</message>
@@ -62,6 +64,7 @@
 	<message key="admin.mergerUsers.noneEnrolled">Ingen vervete brukere</message>
 	<message key="admin.locale.maybeIncomplete">Merkede lokaliseringsfiler kan være ukomplette.</message>
 	<message key="admin.settings.journalsList.showTitle">Tidsskrifttittel</message>
+	<message key="admin.settings.journalsList.showThumbnail">Tidsskriftets thumbnail</message>
 	<message key="admin.settings.journalsList.showDescription">Tidsskriftbeskrivelse</message>
 	<message key="admin.categories">Kategorier</message>
 	<message key="admin.categories.enable.description">Nettstedsadministrator kan velge å definere et sett kategorier her, for å organisere store sett med tidsskrift. Tidsskriftadministratorer kan da velge flere av disse kategoriene for hvert tidsskrift, og lesere kan bla gjennom tidsskriftsamlingene via kategoriene.</message>
