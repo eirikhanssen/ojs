@@ -28,7 +28,7 @@
 {iterate from=journals item=journal}
 	{if $site->getSetting('showThumbnail')}
 		{assign var="displayJournalThumbnail" value=$journal->getLocalizedSetting('journalThumbnail')}
-		<div style="clear:left;">
+		<div class="homepageThumbImageContainer" style="clear:left;">
 		{if $displayJournalThumbnail && is_array($displayJournalThumbnail)}
 			{assign var="altText" value=$journal->getLocalizedSetting('journalThumbnailAltText')}
 			<div class="homepageImage"><a href="{url journal=$journal->getPath()}" class="action"><img src="{$journalFilesPath}{$journal->getId()}/{$displayJournalThumbnail.uploadName|escape:"url"}" {if $altText != ''}alt="{$altText|escape}"{else}alt="{translate key="common.pageHeaderLogo.altText"}"{/if} /></a></div>
@@ -36,7 +36,7 @@
 		</div>
 	{/if}
 	{if $site->getSetting('showTitle')}
-		<h3>{$journal->getLocalizedTitle()|escape}</h3>
+		<h3 class="journalLocalizedTitle">{$journal->getLocalizedTitle()|escape}</h3>
 	{/if}
 	{if $site->getSetting('showDescription')}
 		{if $journal->getLocalizedDescription()}
