@@ -470,6 +470,8 @@ ul.tagit input[type="text"] {
     outline: none;
 }
 
+/* fix indent of first paragraph after thumbnail on index page EH 15.12.2014 */
+h3.journalLocalizedTitle + p {clear:left;}
 
 /* @end */
 
