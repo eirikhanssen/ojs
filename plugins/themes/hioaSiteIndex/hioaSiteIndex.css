@@ -84,11 +84,11 @@ body {
     padding: 0;
 }
 #navbar li + li {
-    margin-left: .5rem;
+    margin-left: .25rem;
 }
 #navbar li a {
     text-decoration: none;
-    padding: .5rem;
+    padding: .5rem .75rem;
     font-weight: bold;
     color: #017795;
     display: inline-block;
@@ -103,7 +103,7 @@ body {
     color: white;
 }
 
-#navbar li.selectedPage a {
+#navbar li.currentPage a {
     background-color: #017795;
     color: white;
     font-weight: bold;
