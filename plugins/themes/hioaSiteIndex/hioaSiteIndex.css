@@ -10,56 +10,33 @@
  *
  */
 
-/*
-
 a:link {
-	color: #000000;
+    text-decoration: underline;
+    color: #0056cc;
 }
 
-a:active {
-	color: #000000;
-}
 
 a:visited {
-	color: #808080;
+	color: #647a98;
 }
 
 a:hover {
-	color: red;
-	background: #ffffff;
+    color: #ff6c00;
+    background: transparent;
 }
 
-#main {
-	background-color: #ffffff;
-	border-left: 1px solid black;
-	border-right: 1px solid black;
-	border-bottom: 1px solid black;
+a:focus {
+    background-color: #ff6c00;
+	color: #ffffff;
 }
 
-#main h2 {
-	padding-left: 10px;
+
+a:active {
+    background-color: #ff0;
+    color: black;
 }
 
-td.tocGalleys {
-	padding-right: 10px;
-}
-
-#navbar {
-	padding-left: 10px;
-	border-bottom: 1px solid black;
-}
-
-#breadcrumb {
-	padding-left: 10px;
-	padding-bottom: 10px;
-	border-bottom: 1px solid black;
-}
-
-#content {
-	padding-left: 10px;
-	border-top: 0px dotted #000;
-}
-*/
+#breadcrumb a:hover {color: black; text-decoration: underline;}
 
 body {
     width: 100%;
@@ -110,17 +87,22 @@ body {
     margin-left: .5rem;
 }
 #navbar li a {
+    text-decoration: none;
     padding: .5rem;
     font-weight: bold;
     color: #017795;
     display: inline-block;
 }
-#navbar .menu li a:hover,
-#navbar .menu li a:active,
-#navbar .menu li a:focus {
-    background-color: #009ac1;
+#navbar .menu li a:hover {
+    background-color: #ff6c00;
     color: white;
 }
+
+#navbar .menu li a:focus {
+    background-color: #ff6c00;
+    color: white;
+}
+
 #navbar li.selectedPage a {
     background-color: #017795;
     color: white;
