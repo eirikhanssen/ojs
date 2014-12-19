@@ -1,0 +1,318 @@
+/**
+ * formakademisk ThemeUnCommon Theme
+ * based on the uncommon theme by Jon Whipple which is based on common.css design by John Willinky
+ * Copyright (c) 2013-2014 Simon Fraser University Library
+ * Copyright (c) 2003-2014 John Willinsky
+ * Copyright (c) 2014 Eirik Hanssen, Oslo and Akershus University College of Applied Sciences
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ */
+/**
+ * Common HTML elements
+ */
+
+/* Uncommon Theme CSS */
+
+body {
+	background-color: #fff;
+	color: #333;
+}
+
+a:link {
+	color: #006699;
+}
+
+a:active {
+	color: #3399CC;
+}
+
+a:visited {
+	color: #006699;
+}
+
+a:hover {
+	color: #eee;
+	background: #006699;
+}
+
+label.error {
+	color: #900;
+}
+
+input {
+	border: 1px solid #006699;
+}
+
+input.textField, select.selectMenu, textarea.textArea, input.uploadField {
+	background-color: #ffffff;
+	color: #333333;
+	border: 1px solid #006699;
+}
+
+input.button {
+	background-color: #EEEEFF;
+}
+
+input.defaultButton {
+	background-color: #3399CC;
+	color: #eee;
+}
+
+#header {
+	background-color: #006699;
+}
+
+#header h1 {
+	padding: 1em 0 1em 0;
+	font-family:  Verdana,Arial,Helvetica,sans-serif;
+	font-weight: bold;
+	text-transform:  uppercase;
+	color: #ffffff;
+	letter-spacing: 2px;
+}
+
+#footer {
+	width: 100%;
+	min-height: 35px;
+	background-color: #006699;
+	color:  #ffffff;
+	padding: 15px;
+}
+
+#footerContent {
+	color:  #ffffff;
+}
+
+#main h2 {
+	font-family:  Verdana,Arial,Helvetica,sans-serif;
+	font-weight: bold;
+	color: #006699;
+}
+
+#main h3 {
+	font-family:  Verdana,Arial,Helvetica,sans-serif;
+	font-weight: bold;
+	color: #006699;
+}
+
+#navbar {
+	border-bottom: 5px solid #006699;
+}
+
+#breadcrumb {
+	color: #666666;
+}
+
+#content {
+	border-top: 5px solid #006699;
+}
+
+#content h3 {
+	font-family:  Verdana,Arial,Helvetica,sans-serif;
+	font-weight: bold;
+	color: #006699;
+	font-weight: bold;
+}
+
+#content h4 {
+	font-family:  Verdana,Arial,Helvetica,sans-serif;
+	font-weight: bold;
+	color: #666666;
+}
+
+#content h5 {
+	color: #666666;
+}
+
+#leftSidebar div.block {
+	padding: 0.5em 0;
+	border-top: 5px solid #006699;
+	border-bottom: 1px solid #006699;
+	margin-bottom: 5px;
+	color: #999999;
+}
+
+#rightSidebar div.block {
+	padding: 0.5em 0;
+	border-top: 5px solid #006699;
+	border-bottom: 1px solid #006699;
+	margin-bottom: 5px;
+	color: #999999;
+}
+
+#leftSidebar div.block span.blockTitle {
+	padding: 0;
+	font-weight: bold;
+	color: #006699;
+}
+
+#rightSidebar div.block span.blockTitle {
+	padding: 0;
+	font-weight: bold;
+	color: #006699;
+}
+
+#leftSidebar div.block span.blockSubtitle {
+	font-weight: bold;
+}
+
+#rightSidebar div.block span.blockSubtitle {
+	font-weight: bold;
+}
+
+pre {
+	background-color: #EEEEFF;
+}
+
+div.separator {
+	border-bottom: 2px solid #006699;
+}
+
+
+/** FORMakademisk CSS */
+
+a:link {
+    color: #333366; padding: .2em;
+}
+a:hover {color: white;}
+
+#navbar {
+    border-bottom: 3px solid #CCCCCC;
+    margin-right: 0;
+    padding-bottom: 0.5em;
+    background-color: white
+
+}
+
+#container {
+    line-height: 125%;
+    margin: 0 auto;
+    text-align: center;
+    width: 940px !important;
+}
+
+div {
+    line-height: 140%;
+    text-align: left;
+}
+
+body {
+    color: #333366;  
+}
+
+
+#main {
+    display: inline;
+    float: left;
+    margin-left: 10%;
+    overflow: hidden;
+    width: 63%;
+padding: 0.5em 0 2em;
+border-left: none;
+border-right: none;
+}
+
+#main h2 {display: block;
+color: #333333;
+font-weight: normal;
+line-height: 130%;
+margin: 0 1em 0.5em 0;
+padding-top: 0.5em;
+}
+
+#header h1 {
+    color: #FFFFFF;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: Georgia,'Times New Roman',Times,serif;
+    font-weight: normal;
+    line-height: 130%;
+    margin: 0 auto;
+    padding: 0.5em 0 0.25em 10%;
+}
+
+#breadcrumb {
+    border-bottom: 1px dotted grey;
+   }
+
+#breadcrumb a.current {
+    font-weight: bold;
+}
+
+
+#content {
+    border-top: 3px solid #CCCCCC;
+    font-size: 0.7em;
+    margin: 0;
+    padding: 0.5em 0 0;
+}
+
+#content h3 {
+    color: #333333;
+font-weight: normal;
+line-height: 1.5em;
+}
+
+#content h4 {
+	font-size: 1.1em;
+	color: #333366;
+	margin-bottom: 0;
+}
+#content h4 + * { margin-top: .1em;}
+
+#navbar a {
+	background-color: white;
+    font-size: 0.65em;
+    letter-spacing: 0.05em;
+	text-align: left;
+}
+
+#rightSidebar div.block {
+    border-bottom: 1px solid #CCCCCC;
+    border-top: 3px solid #CCCCCC;
+    color: #999999;
+    margin-bottom: 5px;
+    padding: 0.5em 0;
+}
+
+#footer {
+    background-color: #FFFFFF;
+	color: black;
+   }
+
+/* Site index header styles */
+
+#headerTitle a {text-decoration: none;}
+
+#header {
+    background-color: #1f1f51;
+    position: relative;
+    height: 135px;
+    z-index: 1;
+}
+#header h1 {
+    margin-left: 0;
+    padding-left: 2rem;
+    color: #ced0cd;
+    /*font-weight: bold;*/
+    font-size: 3rem;
+    font-family: "Arial", sans-serif;
+}
+#header:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+}
+#header:after {
+    content: "";
+    background-image: url("./formakademisk-bg-384x135.png");
+    background-position: top right;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
