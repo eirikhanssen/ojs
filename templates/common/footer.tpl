@@ -11,6 +11,7 @@
 {strip}
 {literal}
 <script type="text/javascript">
+//<!--
 (function () {
     // Eirik Hanssen, Oslo and Akershus University College of Applied Sciences (2014)
     // JavaScript that will indicate what page you are on by adding the class currentPage
@@ -53,6 +54,7 @@
 
     checkMenuLinks(navlinks.firstElementChild);
 }());
+//-->
 </script>
 {/literal}
 {if $pageFooter==''}
