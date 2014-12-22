@@ -8,8 +8,9 @@
  *
  */
 
-html {margin: 0 .5rem;}
-
+html {
+    margin: 0 .5rem;
+}
 body {
     background-color: #fff;
     color: #333;
@@ -17,47 +18,40 @@ body {
     max-width: 75em;
     margin: 0 auto;
 }
-
 a:link {
-	color: #006699;
+    color: #006699;
 }
-
 a:active {
-	color: #3399CC;
+    color: #3399CC;
 }
-
 a:visited {
-	color: #006699;
+    color: #006699;
 }
-
 a:hover {
-	color: #eee;
-	background: #006699;
+    color: #eee;
+    background: #006699;
 }
-
 label.error {
-	color: #900;
+    color: #900;
 }
-
 input {
-	border: 1px solid #006699;
+    border: 1px solid #006699;
 }
-
-input.textField, select.selectMenu, textarea.textArea, input.uploadField {
-	background-color: #ffffff;
-	color: #333333;
-	border: 1px solid #006699;
+input.textField,
+select.selectMenu,
+textarea.textArea,
+input.uploadField {
+    background-color: #ffffff;
+    color: #333333;
+    border: 1px solid #006699;
 }
-
 input.button {
-	background-color: #EEEEFF;
+    background-color: #EEEEFF;
 }
-
 input.defaultButton {
-	background-color: #3399CC;
-	color: #eee;
+    background-color: #3399CC;
+    color: #eee;
 }
-
 /*
 #footer {
 	width: 100%;
@@ -67,24 +61,24 @@ input.defaultButton {
 	padding: 15px;
 }
 */
+
 /*
 #footerContent {
 	color:  #ffffff;
 }
 */
+
 #main h2 {
-	font-family:  Arial,Helvetica,Verdana,sans-serif;
-	font-weight: bold;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    font-weight: bold;
     margin-top: 1em;
-	/*color: #006699;*/
+    /*color: #006699;*/
 }
-
 #main h3 {
-	font-family:  Arial,Helvetica,Verdana,sans-serif;
-	font-weight: bold;
-	color: #006699;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    font-weight: bold;
+    color: #006699;
 }
-
 /* #navbar start */
 
 #navbar {
@@ -117,49 +111,41 @@ input.defaultButton {
     background-color: #ff6c00;
     color: white;
 }
-
 #navbar .menu li a:focus {
     background-color: #ff6c00;
     color: white;
 }
-
 #navbar li.currentPage a {
     background-color: #1F1F51;
     color: white;
     /*font-weight: bold;*/
 }
-
 /* #navbar end*/
+
 #breadcrumb {
-	color: #666666;
+    color: #666666;
     /*border-bottom: 1px dotted grey;*/
     padding-top: .5em;
 }
-
 #breadcrumb a.current {
     font-weight: bold;
 }
-
-
 #content {
-	border-top: 5px solid #006699;
+    border-top: 5px solid #006699;
 }
-
 #content h3 {
-	font-family:  Arial,Helvetica,Verdana,sans-serif;
-	font-weight: bold;
-	color: #006699;
-	font-weight: bold;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    font-weight: bold;
+    color: #006699;
+    font-weight: bold;
 }
-
 #content h4 {
-	font-family:  Arial,Helvetica,Verdana,sans-serif;
-	font-weight: bold;
-	color: #666666;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    font-weight: bold;
+    color: #666666;
 }
-
 #content h5 {
-	color: #666666;
+    color: #666666;
 }
 /*
 #leftSidebar div.block {
@@ -171,31 +157,25 @@ input.defaultButton {
 }*/
 
 #rightSidebar div.block {
-	/*padding: 0.5em 0;*/
+    /*padding: 0.5em 0;*/
     border: none;
-	/*border-top: 5px solid #006699;*/
-	/*border-bottom: 1px solid #006699;*/
-	/*margin-bottom: 5px;*/
-	color: #3b3b3b;
+    /*border-top: 5px solid #006699;*/
+    /*border-bottom: 1px solid #006699;*/
+    /*margin-bottom: 5px;*/
+    color: #3b3b3b;
 }
-
-
-}#rightSidebar div.block span.blockTitle {
-	padding: 0;
-	font-weight: bold;
-	color: #006699;
 }
-
+#rightSidebar div.block span.blockTitle {
+    padding: 0;
+    font-weight: bold;
+    color: #006699;
+}
 #leftSidebar div.block span.blockSubtitle {
-	font-weight: bold;
+    font-weight: bold;
 }
-
 #rightSidebar div.block span.blockSubtitle {
-	font-weight: bold;
+    font-weight: bold;
 }
-
-
-
 /* siteindex styles for right sidebar*/
 
 #rightSidebar {
@@ -236,16 +216,13 @@ input.defaultButton {
     padding: 0;
     margin: 0;
 }
-
 #sidebarLanguageToggle input.button {
     margin-top: .5rem;
 }
 #sidebarDevelopedBy {
     display: none;
 }
-
 /*siteindex styles for rightsidebar*/
-
 
 /*
 pre {
@@ -253,32 +230,28 @@ pre {
 }*/
 
 div.separator {
-	border-bottom: 2px solid #006699;
+    border-bottom: 2px solid #006699;
 }
-
-
 /** FORMakademisk CSS */
 
 a:link {
-    color: #333366; padding: .2em;
+    color: #333366;
+    padding: .2em;
 }
-a:hover {color: white;}
-
-
+a:hover {
+    color: white;
+}
 #container {
     line-height: 1.5em;
     margin: 0 auto;
     min-width: auto !important;
 }
-
 div {
     text-align: left;
 }
-
 body {
     color: #333366;
 }
-
 #main {
     background-color: white;
     color: black;
@@ -296,58 +269,96 @@ body {
     margin-left: 1rem;
     box-sizing: border-box;
 }
-
-
-
-
 #content {
     border-top: 3px solid #CCCCCC;
     font-size: .85rem;
     margin: 0;
     padding: 0.5em 0 0;
 }
-
 #content h3 {
     color: #333333;
-font-weight: normal;
-line-height: 1.5em;
+    font-weight: normal;
+    line-height: 1.5em;
     margin-right: 0;
 }
-
 #content h4 {
-	font-size: 1.1em;
-	color: #333366;
-	margin-bottom: 0;
+    font-size: 1.1em;
+    color: #333366;
+    margin-bottom: 0;
 }
-#content h4 + * { margin-top: .1em;}
-
+#content h4 + * {
+    margin-top: .1em;
+}
 #footer {
     background-color: #FFFFFF;
-	color: black;
-   }
-
+    color: black;
+}
 /* Archives styling */
-#issues h3, h4.tocSectionTitle {border-bottom: 2px solid #5ca0c3; margin-top: 1em;}
-#issues .issueCoverImage {float: left;}
-#issues h4 {float: left; margin: 0;}
-#issues div.separator, .tocArticle + div.separator {margin: 0; border: none;}
-.issue {float: left; clear: left; margin-top: 1rem;}
+
+#issues h3,
+h4.tocSectionTitle {
+    border-bottom: 2px solid #5ca0c3;
+    margin-top: 1em;
+}
+#issues .issueCoverImage {
+    float: left;
+}
+#issues h4 {
+    float: left;
+    margin: 0;
+}
+#issues div.separator,
+.tocArticle + div.separator {
+    margin: 0;
+    border: none;
+}
+.issue {
+    float: left;
+    clear: left;
+    margin-top: 1rem;
+}
 .issueCoverImage img {
-    padding: 2px; border: 1px solid #464646;
+    padding: 2px;
+    border: 1px solid #464646;
     margin: 0;
     margin-right: 1rem;
 }
-.tocCoverImage img {padding: 2px; border: 1px solid #464646;}
+.tocCoverImage img {
+    padding: 2px;
+    border: 1px solid #464646;
+}
+.tocAuthors,
+.tocTitle {
+    margin-left: 1rem;
+    padding-left: 0;
+}
+.tocAuthors {
+    margin-top: .5rem;
+    font-style: italic;
+}
+.tocArticleCoverImage.showCoverImage {
+    min-width: 60px;
+    padding-left: 0;
+}
+#issueCoverImage img,
+#articleCoverImage img {
+    display: block;
+    margin: auto;
+    padding: 5px;
+    border: 1px solid gray;
+    max-width: 95%;
+    height: auto;
+    position: relative;
+    left: -5px;
+}
+.tocCoverImage a, #issueCoverImage a, .issueCoverImage a {padding: 0; background-color: transparent;}
+.tocCoverImage a:hover img, #issueCoverImage a:hover img, .issueCoverImage a:hover img {
+    box-shadow: 0 0 .25rem #ff6c00; /*#069;*/
+}
 
-.tocAuthors, .tocTitle {margin-left: 1rem; padding-left: 0;}
-.tocAuthors {margin-top: .5rem; font-style: italic;}
-
-.tocArticleCoverImage.showCoverImage {min-width: 60px; padding-left: 0;}
-
-#issueCoverImage img, #articleCoverImage img {display: block; margin: auto; padding: 5px; border: 1px solid gray; max-width: 95%; height: auto; position: relative; left: -5px;}
-
-#content h4.tocSectionTitle {margin-right: 0;}
-
+#content h4.tocSectionTitle {
+    margin-right: 0;
+}
 /* FORMakademisk header styles */
 
 #header {
@@ -359,7 +370,6 @@ line-height: 1.5em;
     border-left: 1px solid gray;
     border-right: 1px solid gray;
 }
-
 #header:after {
     position: absolute;
     top: 0;
@@ -376,15 +386,15 @@ line-height: 1.5em;
     background-repeat: no-repeat;
     z-index: -1;
 }
-
-#headerTitle a {text-decoration: none;}
-
+#headerTitle a {
+    text-decoration: none;
+}
 #headerTitle {
     height: 100%;
     position: relative;
 }
-
-#headerTitle a, #headerTitle h1 {
+#headerTitle a,
+#headerTitle h1 {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -398,9 +408,8 @@ line-height: 1.5em;
 #headerTitle a:hover h1 {
     color: white;
 }
-
 #headerTitle h1 {
-    font-family: Arial,Helvetica,Verdana,sans-serif;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
     font-weight: normal;
     font-size: 4rem;
     line-height: 1em;
@@ -411,7 +420,6 @@ line-height: 1.5em;
     text-align: center;
     color: #ced0cd;
 }
-
 @media screen and (max-width: 40rem) {
     #headerTitle h1 {
         margin-right: 0;
