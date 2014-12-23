@@ -156,19 +156,21 @@ input.defaultButton {
 	color: #999999;
 }*/
 
-#rightSidebar div.block {
-    /*padding: 0.5em 0;*/
+#sidebar div.block {
+    padding: 0;
     border: none;
-    /*border-top: 5px solid #006699;*/
-    /*border-bottom: 1px solid #006699;*/
-    /*margin-bottom: 5px;*/
     color: #3b3b3b;
 }
+#sidebar div.block:not(:first-child) {
+    margin-top: 1.5rem;
 }
 #rightSidebar div.block span.blockTitle {
     padding: 0;
     font-weight: bold;
     color: #006699;
+}
+#sidebar label {
+    font-weight: bold;
 }
 #leftSidebar div.block span.blockSubtitle {
     font-weight: bold;
@@ -180,10 +182,7 @@ input.defaultButton {
 
 #rightSidebar {
     position: relative;
-    /*z-index: 100;*/
     background-color: #fbfbfb;
-    /* box-sizing: border-box;*/
-    /*width: 15%;*/
     padding-left: .5rem;
     padding-right: .5rem;
     margin-left: -1rem;
@@ -197,9 +196,6 @@ input.defaultButton {
     padding: 0;
     margin: 0;
 }
-#rightSidebar tr > td:first-child {
-    margin-top: 0.5rem;
-}
 #rightSidebar td input[type="text"],
 #rightSidebar td input[type="password"],
 #rightSidebar td input[type="submit"],
@@ -207,7 +203,6 @@ input.defaultButton {
 #sidebarLanguageToggle select#languageSelect,
 #sidebarLanguageToggle input.button {
     width: 100%;
-    /*display: block;*/
     padding: .25rem;
     box-sizing: border-box;
 }
@@ -219,10 +214,24 @@ input.defaultButton {
 #sidebarLanguageToggle input.button {
     margin-top: .5rem;
 }
+#sidebar form td input[type="submit"]:hover,
+#sidebarLanguageToggle input.button:hover {
+    border-color: black;
+}
+#sidebar tr + tr td:first-child {
+    margin-top: .5rem;
+}
 #sidebarDevelopedBy {
     display: none;
 }
-/*siteindex styles for rightsidebar*/
+#sidebar ul,
+#sidebar ol {
+    padding-left: 1rem;
+}
+#sidebar form {
+    margin-top: .25rem;
+}
+/* siteindex styles for rightsidebar END */
 
 /*
 pre {
@@ -289,9 +298,72 @@ body {
 #content h4 + * {
     margin-top: .1em;
 }
-#footer {
-    background-color: #FFFFFF;
+/* #pageFooter comes from OJS */
+
+/* OLD FOOTER STYLES*/
+
+
+/*#pageFooter {
+    border: 1px solid gray;
+    background-color: #FBFBFB;
+    margin: 0 -1rem;
     color: black;
+}*/
+
+/* div#footer is from journal manager submitted HTML from Setup > 5.4 Journal Page Footer */
+
+/*#footer {
+    background-color: #FBFBFB;
+}
+
+#pageFooter .issn {
+    font-weight: bold;
+    margin: .5rem 1rem;
+}*/
+
+/* NEW FOOTER STYLES */
+
+#pageFooter {
+    background-color: #fbfbfb;
+    display: inline-block;
+    width: 100%;
+    border: 1px solid gray;
+}
+#pageFooter .hostedby {
+    float: left;
+    clear: left;
+    margin-top: .5rem;
+    margin: 0 auto;
+    font-family: sans-serif;
+    width: 100%;
+}
+#pageFooter .hostedby img {
+    display: block;
+    margin-bottom: .5rem;
+}
+#pageFooter .hostedby a {
+    padding: 1rem;
+    display: block;
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding-top: 60px;
+    background-image: url(hioalogo-web-nor.png);
+    background-repeat: no-repeat;
+    background-position: 1rem 10px;
+}
+#pageFooter .hostedby span {
+    margin-left: 1rem;
+}
+#pageFooter .hostedby a:hover{
+    background-color: white;
+    color: black;
+}
+#pageFooter .issn {
+    float: left;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: .5rem 1rem;
 }
 /* Archives styling */
 
@@ -351,11 +423,18 @@ h4.tocSectionTitle {
     position: relative;
     left: -5px;
 }
-.tocCoverImage a, #issueCoverImage a, .issueCoverImage a {padding: 0; background-color: transparent;}
-.tocCoverImage a:hover img, #issueCoverImage a:hover img, .issueCoverImage a:hover img {
-    box-shadow: 0 0 .25rem #ff6c00; /*#069;*/
+.tocCoverImage a,
+#issueCoverImage a,
+.issueCoverImage a {
+    padding: 0;
+    background-color: transparent;
 }
-
+.tocCoverImage a:hover img,
+#issueCoverImage a:hover img,
+.issueCoverImage a:hover img {
+    box-shadow: 0 0 .25rem #ff6c00;
+    /*#069;*/
+}
 #content h4.tocSectionTitle {
     margin-right: 0;
 }
@@ -363,44 +442,18 @@ h4.tocSectionTitle {
 
 #header {
     background-color: #1f1f51;
-    position: relative;
-    height: 135px;
-    z-index: 1;
     border: none;
     border-left: 1px solid gray;
     border-right: 1px solid gray;
 }
-#header:after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: 0;
-    padding: 0;
-}
-#header:after {
-    content: "";
-    background-image: url("./formakademisk-bg-384x135.png");
-    background-position: top right;
-    background-repeat: no-repeat;
-    z-index: -1;
+#headerTitle {
+    background-image: url(formakademisk-bg-repeat-mirror-y.png);
+    background-repeat: repeat-y;
+    background-position: center right;
+    background-size: auto;
 }
 #headerTitle a {
     text-decoration: none;
-}
-#headerTitle {
-    height: 100%;
-    position: relative;
-}
-#headerTitle a,
-#headerTitle h1 {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
 }
 #headerTitle a:hover {
     background-color: transparent;
@@ -409,21 +462,35 @@ h4.tocSectionTitle {
     color: white;
 }
 #headerTitle h1 {
+    margin: 0;
+    margin-right: 15%;
     font-family: Arial, Helvetica, Verdana, sans-serif;
     font-weight: normal;
-    font-size: 4rem;
-    line-height: 1em;
-    margin: 0;
-    padding-right: 0;
-    padding-left: 0;
-    margin-right: 15%;
+    color: #CED0CD;
+    padding: 1.15em 0;
     text-align: center;
-    color: #ced0cd;
+    font-size: 3rem;
 }
 @media screen and (max-width: 40rem) {
+    #main #content,
+    #container #main > *,
+    #container #main h2 {
+        margin-left: 0;
+    }
     #headerTitle h1 {
-        margin-right: 0;
-        font-size: 3rem;
-        line-height: 1.5em;
+        font-size: 2rem;
+        margin: 0;
+        background-color: rgba(31, 31, 81, 0.5);
+    }
+    #headerTitle {
+        background-size: 50% auto;
+    }
+    ul,
+    ol {
+        padding-left: 1rem;
+    }
+    #sidebar ul,
+    #sidebar ol {
+        padding-left: .5rem;
     }
 }
