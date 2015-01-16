@@ -471,6 +471,13 @@ h4.tocSectionTitle {
     text-align: center;
     font-size: 3rem;
 }
+
+/* Minor fixes START */
+#articleCoverImage {margin-top: 1em;}
+#topBar {padding: 0; margin-top: 1em;}
+a.pdf {padding-left: 21px; background-position: left center !important;}
+a.pdf:hover {background-color: #006699 !important;}
+/* Minor fixes END */
 @media screen and (max-width: 40rem) {
     #main #content,
     #container #main > *,
