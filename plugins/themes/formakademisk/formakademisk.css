@@ -322,7 +322,7 @@ body {
 }*/
 
 /* NEW FOOTER STYLES */
-
+/*
 #pageFooter {
     background-color: #fbfbfb;
     display: inline-block;
@@ -364,7 +364,33 @@ body {
     font-weight: bold;
     font-family: sans-serif;
     margin: .5rem 1rem;
+}*/
+
+#pageFooter {margin-top: 3rem;}
+#commonPageFooterContent, #journalPageFooterContent {
+    float: left;
+    margin: 0;
+    border: 0;
 }
+#commonPageFooterContent {width: 66%;}
+#journalPageFooterContent {width: 33%;}
+#pageFooterContentWrapper {
+float: left; clear: left; width: 100%;
+}
+#commonPageFooterContent {clear: left;}
+#journalIssn {
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid #ccc;
+    border-bottom: 2px solid #006699;
+}
+
+#hostedBy, #cookiePolicy {
+    float: left;
+    max-width: 50%;
+}
+#pageFooter #hostedBy {clear: left;}
+
 /* Archives styling */
 
 #issues h3,
