@@ -8,9 +8,12 @@
  *
  */
 
-html {
-    margin: 0 .5rem;
+@media screen and (min-width: 600px) {
+    html {
+        margin: 0 .5rem;
+    }
 }
+
 body {
     background-color: #fff;
     color: #333;
@@ -52,22 +55,6 @@ input.defaultButton {
     background-color: #3399CC;
     color: #eee;
 }
-/*
-#footer {
-	width: 100%;
-	min-height: 35px;
-	background-color: #006699;
-	color:  #ffffff;
-	padding: 15px;
-}
-*/
-
-/*
-#footerContent {
-	color:  #ffffff;
-}
-*/
-
 #main h2 {
     font-family: Arial, Helvetica, Verdana, sans-serif;
     font-weight: bold;
@@ -103,7 +90,6 @@ input.defaultButton {
 #navbar li a {
     text-decoration: none;
     padding: .125rem .5rem;
-    /*font-weight: bold;*/
     color: #1F1F51;
     display: inline-block;
 }
@@ -118,13 +104,11 @@ input.defaultButton {
 #navbar li.currentPage a {
     background-color: #1F1F51;
     color: white;
-    /*font-weight: bold;*/
 }
 /* #navbar end*/
 
 #breadcrumb {
     color: #666666;
-    /*border-bottom: 1px dotted grey;*/
     padding-top: .5em;
 }
 #breadcrumb a.current {
@@ -178,7 +162,7 @@ input.defaultButton {
 #rightSidebar div.block span.blockSubtitle {
     font-weight: bold;
 }
-/* siteindex styles for right sidebar*/
+/* siteindex styles for right sidebar START */
 
 #rightSidebar {
     position: relative;
@@ -232,11 +216,6 @@ input.defaultButton {
     margin-top: .25rem;
 }
 /* siteindex styles for rightsidebar END */
-
-/*
-pre {
-	background-color: #EEEEFF;
-}*/
 
 div.separator {
     border-bottom: 2px solid #006699;
@@ -298,99 +277,61 @@ body {
 #content h4 + * {
     margin-top: .1em;
 }
-/* #pageFooter comes from OJS */
+/* Footer Styles */
 
-/* OLD FOOTER STYLES*/
-
-
-/*#pageFooter {
-    border: 1px solid gray;
-    background-color: #FBFBFB;
-    margin: 0 -1rem;
-    color: black;
-}*/
-
-/* div#footer is from journal manager submitted HTML from Setup > 5.4 Journal Page Footer */
-
-/*#footer {
-    background-color: #FBFBFB;
-}
-
-#pageFooter .issn {
-    font-weight: bold;
-    margin: .5rem 1rem;
-}*/
-
-/* NEW FOOTER STYLES */
-/*
 #pageFooter {
-    background-color: #fbfbfb;
-    display: inline-block;
-    width: 100%;
-    border: 1px solid gray;
+    margin-top: 3rem;
 }
-#pageFooter .hostedby {
-    float: left;
-    clear: left;
-    margin-top: .5rem;
-    margin: 0 auto;
-    font-family: sans-serif;
-    width: 100%;
-}
-#pageFooter .hostedby img {
-    display: block;
-    margin-bottom: .5rem;
-}
-#pageFooter .hostedby a {
-    padding: 1rem;
-    display: block;
-    text-align: left;
-    font-family: sans-serif;
-    font-weight: bold;
-    padding-top: 60px;
-    background-image: url(hioalogo-web-nor.png);
-    background-repeat: no-repeat;
-    background-position: 1rem 10px;
-}
-#pageFooter .hostedby span {
-    margin-left: 1rem;
-}
-#pageFooter .hostedby a:hover{
-    background-color: white;
-    color: black;
-}
-#pageFooter .issn {
-    float: left;
-    font-weight: bold;
-    font-family: sans-serif;
-    margin: .5rem 1rem;
-}*/
-
-#pageFooter {margin-top: 3rem;}
-#commonPageFooterContent, #journalPageFooterContent {
+#commonPageFooterContent,
+#journalPageFooterContent {
     float: left;
     margin: 0;
     border: 0;
 }
-#commonPageFooterContent {width: 66%;}
-#journalPageFooterContent {width: 33%;}
-#pageFooterContentWrapper {
-float: left; clear: left; width: 100%;
+#commonPageFooterContent {
+    width: 66%;
 }
-#commonPageFooterContent {clear: left;}
+#journalPageFooterContent {
+    width: 33%;
+}
+#pageFooterContentWrapper {
+    float: left;
+    clear: left;
+    width: 100%;
+}
+#commonPageFooterContent {
+    clear: left;
+}
 #journalIssn {
     width: 100%;
     float: left;
     border-bottom: 1px solid #ccc;
     border-bottom: 2px solid #006699;
 }
-
-#hostedBy, #cookiePolicy {
+#commonPageFooterContent,
+#hostedBy,
+#cookiePolicy,
+#journalPageFooterContent {
+    width: 100%;
+    clear: both;
     float: left;
-    max-width: 50%;
 }
-#pageFooter #hostedBy {clear: left;}
+@media screen and (min-width: 720px) {
+    #cookiePolicy {
+        width: auto;
+        max-width: 35%;
+        clear: none;
+        float: right;
+    }
+    #hostedBy {max-width: 65%;}
+}
+#pageFooter img.hioaFooterLogo {
+    float: left;
+    margin-right: 1rem;
+}
 
+#hostedByHioaLSB {display: table;}
+#hostedByHioaLSB span {display: table-cell; vertical-align: middle;}
 /* Archives styling */
 
 #issues h3,
@@ -497,13 +438,24 @@ h4.tocSectionTitle {
     text-align: center;
     font-size: 3rem;
 }
-
 /* Minor fixes START */
-#articleCoverImage {margin-top: 1em;}
-#topBar {padding: 0; margin-top: 1em;}
-a.pdf {padding-left: 21px; background-position: left center !important;}
-a.pdf:hover {background-color: #006699 !important;}
+
+#articleCoverImage {
+    margin-top: 1em;
+}
+#topBar {
+    padding: 0;
+    margin-top: 1em;
+}
+a.pdf {
+    padding-left: 21px;
+    background-position: left center !important;
+}
+a.pdf:hover {
+    background-color: #006699 !important;
+}
 /* Minor fixes END */
+
 @media screen and (max-width: 40rem) {
     #main #content,
     #container #main > *,
