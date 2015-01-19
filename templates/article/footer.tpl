@@ -69,10 +69,9 @@
             
             <div id="hostedBy">
                 <h4>Hosted by</h4>
-                <a class="hostedByHioaLSB" href="http://hioa.no/lsb">
+                <a id="hostedByHioaLSB" href="http://hioa.no/lsb">
                     <img class="hioaFooterLogo" src="/public/site/images/hioalogo-white-on-black-100px.png"/>
-                    <span id="hostedByHioa">Oslo and Akershus University College of Applied Sciences,</span><br />
-                    <span id="hostedByLSB">Learning Centre and Library</span>
+                    <span>Oslo and Akershus University College of Applied Sciences, Learning Centre and Library</span>
                 </a>
             </div>
 
