@@ -1,0 +1,129 @@
+@media screen and (max-width:600px) {
+#main {width: 100%;}
+#sidebar {
+    /*background-color: red;*/
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    border: 1px solid gray;
+    width: 6rem;
+    height: 6rem;
+    border-radius: .25em;
+    box-shadow: 0 0 .75em #ccc
+}
+#sidebar ul, #sidebar ol {
+    list-style-type: none;
+    padding: 0;
+}
+#sidebar ul a, #sidebar ol a {
+display: block;}
+#sidebar:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    box-sizing: border-box;
+    margin: auto;
+    height: 70%;
+    width: 80%;
+    border-top: .5em solid gray;
+    border-bottom: .5em solid gray;
+    z-index: -1;
+}
+#sidebar:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: gray;
+    border-radius: .5em;
+    box-sizing: border-box;
+    margin: auto;
+    height: .5em;
+    width: 80%;
+    z-index: -1;
+}
+
+#sidebar:hover::after {
+    background-color: orange;
+    border-color: black !important;
+}
+#sidebar:active #rightSidebar,
+#sidebar:focus #rightSidebar,
+#rightSidebar:hover,
+#sidebar:active #leftSidebar,
+#sidebar:focus #leftSidebar,
+#leftSidebar:hover {
+    display: block;
+}
+#rightSidebar,
+#leftSidebar {
+    float: right;
+    display: none;
+    padding: .75em;
+    position: relative;
+    z-index: 1;
+    top: 100%;
+    right: 0;
+    right: .5rem;
+    min-width: 20em;
+    display: none;
+    width: auto;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+}
+
+#rightSidebar:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    clear: both;
+    height: 0;
+    font-size: 0; }
+
+#rightSidebar ul,
+#leftSidebar ul,
+{
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+}
+#rightSidebar li,
+#leftSidebar li {
+    width: 100%;
+    background-color: #ddd;
+    margin: 0;
+    padding: .25em 0;
+    text-align: center;
+    font-family: sans-serif;
+    color: #434343;
+}
+#rightSidebar li:first-child,
+#leftSidebar li:first-child {
+    border-top: 1px solid #ccc;
+}
+#rightSidebar li:last-child,
+#leftSidebar li:last-child {
+    border-bottom: 1px solid #ccc;
+}
+#rightSidebar li:hover,
+#leftSidebar li:hover {
+    background-color: #ffd;
+    color: black;
+    border-color: black;
+}
+#rightSidebar li+li,
+#leftSidebar li+li {
+    border-top: 1px solid #ccc;
+}
+#rightSidebar li:hover+li,
+#leftSidebar li:hover+li {
+    border-top-color: black;
+}
+}
