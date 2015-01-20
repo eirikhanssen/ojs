@@ -1187,4 +1187,11 @@ Validation may fail on search URLs that require posted form data.]]></message>
 	<!-- Debug messages -->
 	<message key="debug.notes.currencyListLoad">Loaded currency list "{$filename}" from XML</message>
 	<message key="debug.notes.helpMappingLoad">Reloaded XML help mapping file {$filename} in search of {$id}.</message>
+    <message key="hioamod.footer.hostedbyheader">Hosted by</message>
+    <message key="hioamod.footer.lsblink">http://www.hioa.no/eng/Learning-Centre-and-Library</message>
+    <message key="hioamod.footer.lsbname">Learning Centre and Library</message>
+    <message key="hioamod.footer.hioafullname">Oslo and Akershus University College of Applied Sciences</message>
+    <message key="hioamod.footer.privacypolicyheader">Privacy policy</message>
+    <message key="hioamod.footer.aboutcookieusagelink"><![CDATA[<a class="en_US" href="/help/cookies-en_US.html">About cookie usage at journals.hioa.no</a>]]></message>
+    <message key="hioamod.footer.hioalogolink">/public/site/images/hioalogo-white-on-black-100px-en_US.png</message>
 </locale>

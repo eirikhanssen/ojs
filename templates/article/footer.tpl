@@ -68,18 +68,20 @@
         <div id="commonPageFooterContent">
             
             <div id="hostedBy">
-                <h4>Hosted by</h4>
-                <a id="hostedByHioaLSB" href="http://hioa.no/lsb">
-                    <img class="hioaFooterLogo" src="/public/site/images/hioalogo-white-on-black-100px.png"/>
-                    <span>Oslo and Akershus University College of Applied Sciences, Learning Centre and Library</span>
+                <h4>{translate key="hioamod.footer.hostedbyheader"}</h4>
+                <a id="hostedByHioaLSB" href="{translate key="hioamod.footer.lsblink"}">
+                    <img class="hioaFooterLogo" src="{translate key="hioamod.footer.hioalogolink"}"/>
+                    <span>
+                        <strong>{translate key="hioamod.footer.hioafullname"}</strong><br /> 
+                        {translate key="hioamod.footer.lsbname"}
+                    </span>
                 </a>
             </div>
 
             <div id="cookiePolicy">
-                <h4>Cookie Policy</h4>
+                <h4>{translate key="hioamod.footer.privacypolicyheader"}</h4>
                 <ul>
-                    <li><a class="en_US" href="/help/journals.hioa.no-cookies-en_US.html">Cookie Policy (english)</a></li>
-                    <li><a class="no_NO" href="/help/journals.hioa.no-cookies-no_NO.html">Cookie Policy (norsk)</a></li>
+                    <li>{translate key="hioamod.footer.aboutcookieusagelink"}</li>
                 </ul>
             </div>
         </div>

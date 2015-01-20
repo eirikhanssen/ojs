@@ -1102,5 +1102,12 @@ Authors who publish with this journal agree to the following terms:
 	<message key="user.subscriptions.status.needsApprovalDescription">Abonnementet må vurderes før det kan aktiviseres.</message>
 	<message key="user.subscriptions.status.awaitingManualPaymentDescription">Manuell betaling er initiert men ennå ikke mottatt</message>
 	<message key="user.subscriptions.status.awaitingOnlinePaymentDescription">En nettbetaling har blitt initiert men har blitt kansellert eller ikke fullført</message>
+    <message key="hioamod.footer.hostedbyheader">Driftet av</message>
+    <message key="hioamod.footer.lsblink">http://www.hioa.no/LSB</message>
+    <message key="hioamod.footer.lsbname">Læringssenter og bibliotek</message>
+    <message key="hioamod.footer.hioafullname">Høgskolen i Oslo og Akershus</message>
+    <message key="hioamod.footer.privacypolicyheader">Personvernerklæring</message>
+    <message key="hioamod.footer.aboutcookieusagelink"><![CDATA[<a class="no_NO" href="/help/cookies-no_NO.html">Om informasjonskapsler på journals.hioa.no</a>]]></message>
+    <message key="hioamod.footer.hioalogolink">/public/site/images/hioalogo-white-on-black-100px-no_NO.png</message>
 </locale>
 
