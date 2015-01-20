@@ -70,7 +70,9 @@
             <div id="hostedBy">
                 <h4>{translate key="hioamod.footer.hostedbyheader"}</h4>
                 <a id="hostedByHioaLSB" href="{translate key="hioamod.footer.lsblink"}">
-                    <img class="hioaFooterLogo" src="{translate key="hioamod.footer.hioalogolink"}"/>
+                    {*<img class="hioaFooterLogo" src="{translate key="hioamod.footer.hioalogolink"}"/>*}
+                    {* use simplified logo instead *}
+                    <img class="hioaFooterLogo" src="/public/site/images/hioalogo-bars-black-on-transparent-bg-80x45.png"/>
                     <span>
                         <strong>{translate key="hioamod.footer.hioafullname"}</strong><br /> 
                         {translate key="hioamod.footer.lsbname"}
