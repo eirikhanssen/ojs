@@ -24,7 +24,6 @@
         if (headerTitle) {
             var navbarhomelink = document.getElementById("home").getElementsByTagName("a")[0].getAttribute("href");
             var homelink = document.createElement("a");
-            homelink.style.padding = "0";
             homelink.href = navbarhomelink;
             homelink.title = "Go back to the journal's homepage";
             homelink.appendChild(headerTitle.firstElementChild);
@@ -80,7 +79,6 @@
             };
             return checkLink;
         }());
-
         checkMenuLinks(navlinks.firstElementChild);
     });
 }());
