@@ -70,6 +70,8 @@
 	{/if}
 
 	{$additionalHeadData}
+	<!-- Customized JavaScripts for journals.hioa.no -->
+	<script type="text/javascript" src="{$baseUrl}/js/hioa_customized_scripts/journals.hioa.no.customized.js"></script>
 </head>
 <body>
 
