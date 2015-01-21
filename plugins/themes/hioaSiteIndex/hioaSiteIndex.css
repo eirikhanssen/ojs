@@ -45,6 +45,13 @@ body {
     margin: 0 auto;
 }
 
+#container {
+    /*line-height: 1.5em;*/
+    margin: 0 auto;
+    /* Important to allow for narrow layout */
+    /*min-width: auto !important;*/
+    min-width: inherit !important;
+}
 
 #footer {
     background-color: #fbfbfb;
@@ -115,7 +122,6 @@ body {
 }
 #rightSidebar {
     position: relative;
-    /*z-index: 100;*/
     background-color: #fbfbfb;
     /* box-sizing: border-box;*/
     /*width: 15%;*/
@@ -140,7 +146,6 @@ body {
 #sidebarLanguageToggle select#languageSelect,
 #sidebarLanguageToggle input.button {
     width: 100%;
-    /*display: block;*/
     padding: .25rem;
     box-sizing: border-box;
 }
@@ -158,11 +163,10 @@ body {
 #sidebarDevelopedBy {
     display: none;
 }
-/* Site index header styles */
+/* Site index header START */
 
 #header {
-    padding-right: 15% !important;
-    width: 85%;
+    width: 100%;
     /*background-color: #ccc;*/
     border-left: 1px solid gray;
     border-right: 1px solid gray;
@@ -173,45 +177,103 @@ body {
     position: relative;
     min-height: 113px;
 }
-#headerTile {
-    text-align: center;
-}
-#headerTile h1 {
-    display: inline-block;
-}
 
-#header h1 {
-    padding: 0;
-    margin-left: 113px;
-    padding-left: 4rem;
-    color: white;
-    font-weight: bold;
-    font-size: 3rem;
-    font-family: "Times New Roman", Times, serif;
-    max-width: 8em;
-}
-#header:after,
-#header:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: 0;
-    padding: 0;
-}
-#header:after {
-    content: "";
+#header a {text-decoration: none; min-height: 113px; display: table; width: 100%;}
+
+#header {
     background-image: url("./open-access-transp-bg-609x113.png");
     background-position: top right;
     background-repeat: no-repeat;
-    z-index: -1;
+    /* Fill height, keep aspect ratio for width */
+    background-size: auto 100%;
 }
-#header:before {
-    content: "";
+#headerTitle {
     background-image: url("./hioalogo-en-semi-transp113x113.png");
-    background-position: top left;
+    background-position: 1rem center;
     background-repeat: no-repeat;
-    left: 2rem;
-    z-index: -1;
+    box-sizing: border-box; padding-left: 2rem;
+    min-height: 113px;
 }
+
+#header h1 {
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 1em;
+    padding-left: 113px;
+    padding-right: .5rem;
+    color: white;
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-family: "Times New Roman", Times, serif;
+    text-shadow: 0 0 5px black;
+}
+
+/* Site index header END */
+
+/* FOOTER START */
+
+#pageFooter {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+#commonPageFooterContent,
+#journalPageFooterContent {
+    float: left;
+    margin: 0;
+    border: 0;
+}
+#commonPageFooterContent {
+    width: 66%;
+}
+#journalPageFooterContent {
+    width: 33%;
+}
+#pageFooterContentWrapper {
+    float: left;
+    clear: left;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+#commonPageFooterContent {
+    clear: left;
+}
+#journalIssn {
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid #ccc;
+    border-bottom: 2px solid #006699;
+}
+
+#pageFooterContentWrapper {border-top: 2px solid #aaa; margin-top: 2.25rem;}
+/* If #journalIssn that has it's own border, is present, #pageFooterContentWrapper doesn't need the border and margin */
+#journalIssn + #pageFooterContentWrapper {border-top: none; margin-top: 0;}
+
+#commonPageFooterContent,
+#hostedBy,
+#cookiePolicy,
+#journalPageFooterContent {
+    width: 100%;
+    clear: both;
+    float: left;
+}
+
+#pageFooter img.hioaFooterLogo {
+    float: left;
+    margin-right: 1rem;
+}
+
+#hostedByHioaLSB {display: table;}
+#hostedByHioaLSB span {display: table-cell; vertical-align: middle;}
+
+@media screen and (min-width: 720px) {
+    #cookiePolicy {
+        width: auto;
+        max-width: 35%;
+        clear: none;
+        float: right;
+    }
+    #hostedBy {max-width: 65%;}
+}
+
+/* FOOTER END */
+
