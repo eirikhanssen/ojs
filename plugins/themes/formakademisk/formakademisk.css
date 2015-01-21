@@ -1,11 +1,10 @@
 /**
- * Theme for the journal Formakademisk
- * Based on Uncommon theme Jon Whipple, but is heavily modified to allow for more responsive layout
+ * OJS Theme for the journal FORMakademisk
  * Copyright (c) 2013-2014 Simon Fraser University Library
  * Copyright (c) 2003-2014 John Willinsky
- * Copyright (c) 2014 Eirik Hanssen, Oslo and Akershus University College of Applied Sciences
+ * FORMakademisk theme by Eirik Hanssen, Oslo and Akershus University College of Applied Sciences
+ * Based on Uncommon theme Jon Whipple, but is heavily modified to allow for more responsive layout
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
- *
  */
 
 @media screen and (min-width: 600px) {
@@ -66,7 +65,8 @@ input.defaultButton {
     font-weight: bold;
     color: #006699;
 }
-/* #navbar start */
+
+/* #navbar START */
 
 #navbar {
     margin-right: 0;
@@ -105,7 +105,7 @@ input.defaultButton {
     background-color: #1F1F51;
     color: white;
 }
-/* #navbar end*/
+/* #navbar END*/
 
 #breadcrumb {
     color: #666666;
@@ -131,6 +131,8 @@ input.defaultButton {
 #content h5 {
     color: #666666;
 }
+
+/* Left sidebar not used in FORMakademisk */
 /*
 #leftSidebar div.block {
 	padding: 0.5em 0;
@@ -277,7 +279,7 @@ body {
 #content h4 + * {
     margin-top: .1em;
 }
-/* Footer Styles */
+/* FOOTER START */
 
 #pageFooter {
     margin-top: 3rem;
@@ -298,6 +300,7 @@ body {
     float: left;
     clear: left;
     width: 100%;
+    margin-bottom: 1rem;
 }
 #commonPageFooterContent {
     clear: left;
@@ -308,6 +311,11 @@ body {
     border-bottom: 1px solid #ccc;
     border-bottom: 2px solid #006699;
 }
+
+#pageFooterContentWrapper {border-top: 2px solid #006699; margin-top: 2.25rem;}
+/* If #journalIssn that has it's own border, is present, #pageFooterContentWrapper doesn't need the border and margin */
+#journalIssn + #pageFooterContentWrapper {border-top: none; margin-top: 0;}
+
 #commonPageFooterContent,
 #hostedBy,
 #cookiePolicy,
@@ -316,6 +324,15 @@ body {
     clear: both;
     float: left;
 }
+
+#pageFooter img.hioaFooterLogo {
+    float: left;
+    margin-right: 1rem;
+}
+
+#hostedByHioaLSB {display: table;}
+#hostedByHioaLSB span {display: table-cell; vertical-align: middle;}
+
 @media screen and (min-width: 720px) {
     #cookiePolicy {
         width: auto;
@@ -325,14 +342,10 @@ body {
     }
     #hostedBy {max-width: 65%;}
 }
-#pageFooter img.hioaFooterLogo {
-    float: left;
-    margin-right: 1rem;
-}
 
-#hostedByHioaLSB {display: table;}
-#hostedByHioaLSB span {display: table-cell; vertical-align: middle;}
-/* Archives styling */
+/* FOOTER END */
+
+/* Archives START */
 
 #issues h3,
 h4.tocSectionTitle {
@@ -405,7 +418,10 @@ h4.tocSectionTitle {
 #content h4.tocSectionTitle {
     margin-right: 0;
 }
-/* FORMakademisk header styles */
+
+/* Archives END */
+
+/* FORMakademisk header START */
 
 #header {
     background-color: #1f1f51;
@@ -434,10 +450,13 @@ h4.tocSectionTitle {
     font-family: Arial, Helvetica, Verdana, sans-serif;
     font-weight: normal;
     color: #CED0CD;
-    padding: 1.15em 0;
+    padding: 1.5rem 0;
     text-align: center;
     font-size: 3rem;
 }
+
+/* FORMakademisk header END */
+
 /* Minor fixes START */
 
 #articleCoverImage {
@@ -455,6 +474,8 @@ a.pdf:hover {
     background-color: #006699 !important;
 }
 /* Minor fixes END */
+
+/* Narrow Layout - Needs more attention START */
 
 @media screen and (max-width: 40rem) {
     #main #content,
@@ -479,3 +500,5 @@ a.pdf:hover {
         padding-left: .5rem;
     }
 }
+
+/* Narrow Layout - Needs more attention END */
