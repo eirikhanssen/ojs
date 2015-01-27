@@ -141,7 +141,7 @@ input.defaultButton {
 	margin-bottom: 5px;
 	color: #999999;
 }*/
-
+/* common sidebar styles START */
 #sidebar div.block {
     padding: 0;
     border: none;
@@ -164,6 +164,7 @@ input.defaultButton {
 #rightSidebar div.block span.blockSubtitle {
     font-weight: bold;
 }
+/* common sidebar styles END */
 /* siteindex styles for right sidebar START */
 
 #rightSidebar {
