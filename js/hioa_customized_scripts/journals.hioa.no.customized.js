@@ -19,7 +19,7 @@
 // Runs when the DOM is ready (relies on jQuery)
 (function wrapHeaderInHomePageLink() {
     $(document).ready(function () {
-        //alert("wrapHeaderInHomePageLink function");
+        //alert("in wrapHeaderInHomePageLink() function!"); //debug
         var headerTitle = document.getElementById("headerTitle"); //Title");
         if (headerTitle) {
             var navbarhomelink = document.getElementById("home").getElementsByTagName("a")[0].getAttribute("href");
@@ -39,39 +39,52 @@
 // Runs when the DOM is ready (relies on jQuery)
 (function indicateCurrentPageInNavbarList() {
     $(document).ready(function () {
-        //alert("indicateCurrentPageInNavbarList function");
-        var menu = document.getElementsByTagName("body")[0];
-        var addClass = "currentPage";
-        var elementClass = "";
+        // alert("in indicateCurrentPageInNavbarList() function!"); // debug
+        var body = document.getElementsByTagName("body")[0];
         var navbar = document.getElementById('navbar');
         var navlinks = navbar.getElementsByClassName('menu')[0];
 
+        var addClass = function (node, classname) {
+            // Make sure we're deling with a node and a string here
+            // alert("in addClass() func!"); // debug
+
+            if(node.nodeType === 1 && typeof classname === "string") {
+            // alert("Adding class '" + classname + "' to " + node.nodeName + "#" + node.getAttribute("id")); // debug
+                node.className = node.className.trim() + " " + classname.trim();
+                node.className = node.className.trim();
+            }
+        };
+
         var checkMenuLinks = (function (node) {
-            //alert("checkMenuLinks function");
             var currentMenuLink = "";
             var location = document.location;
             var indexHomePagePattern = /\.[A-Za-z][A-Za-z]+\/$/;
+            var indexHomePagePattern2 = /\/index$/;
+            var indexHomePagePattern3 = /\/index.php$/;
             var journalHomePagePattern = /\.[A-Za-z][a-zA-Z]+\/index\.php\/[^/]+\/?$/;
             var isIndexHomePage = (indexHomePagePattern.exec(location) !== null);
+            var isIndexHomePage2 = (indexHomePagePattern2.exec(location) !== null);
+            var isIndexHomePage3 = (indexHomePagePattern3.exec(location) !== null);
             var isJournalHomePage = (journalHomePagePattern.exec(location) !== null);
             var userHomePagePattern = /\.[A-Za-z][a-zA-Z]+\/index\.php\/[^/]+\/user\/?$/;
             var isUserHomePage = (userHomePagePattern.exec(location) !== null);
-            //alert("isIndexHomePage: " + isIndexHomePage + "\nisJournalHomePage: " + isJournalHomePage + "\nisUserHomePage: "  + isUserHomePage); //debug
+            var isHome =  isIndexHomePage || isIndexHomePage2 || isIndexHomePage3 || isJournalHomePage || isUserHomePage;
 
             var checkLink = function (node) {
-                //alert("checkLink function");
+                var nodeId = node.getAttribute("id");
+		// alert("in checkMenuLinks() function!" + "\n" + "isIndexHomePage (matches first pattern): " + isIndexHomePage + "\nisIndexHomePage2 (matches 2nd pattern): " + isIndexHomePage2 + "\nisJournalHomePage: " + isJournalHomePage + "\nisUserHomePage: "  + isUserHomePage + "\nisHome: " + isHome); //debug
                 currentMenuLink = node.firstElementChild.getAttribute("href");
-                //alert(currentMenuLink);
-                var isNavItemHomeElement = (node.getAttribute("id") === "home");
-                var isNavItemUserHomeElement = (node.getAttribute("id") === "userHome");
+                var isNavItemHomeElement = (nodeId === "home");
+                var isNavItemUserHomeElement = (nodeId === "userHome");
                 if (
                     (currentMenuLink == location) || 
-                    (isNavItemHomeElement && (isIndexHomePage || isJournalHomePage)) || 
-                    (isNavItemUserHomeElement && isUserHomePage)
+                    ((isNavItemHomeElement || isNavItemUserHomeElement) && isHome)
                    ) {
-                    //alert("add: " + addClass);
-                    elementClass = node.className + addClass;
-                    node.className = elementClass.trim();
+                    // alert("ok, let's call addClass func"); // debug
+                    // Add class to navitem to indicate page
+                    addClass(node, "currentPage");
+                    // Add class to body element to indicate page
+                    addClass(body, nodeId);
                 }
                 if (node.nextElementSibling !== null) {
                     checkLink(node.nextElementSibling);
