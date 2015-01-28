@@ -1,4 +1,4 @@
-/**
+/*
  * plugins/themes/professions/professions.css
  *
  * Copyright (c) 2013-2014 Simon Fraser University Library
@@ -6,10 +6,7 @@
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Responsive theme for Professions & Professionalisms, based on classicBrown theme
- *
  */
-
-/* TODO mobile css: hide #rightSidebar behind a menu button for narrow layout */
 
 body {
     background-color: #fff;
@@ -18,24 +15,6 @@ body {
 a {
     text-decoration: none;
 }
-/*
-a:link {
-	color: #320;
-}
-
-a:active {
-	color: #DEB887;
-}
-
-a:visited {
-	color: #320;
-}
-
-a:hover {
-	color: #DEB887;
-	background: #320;
-}*/
-
 a:link {
     color: #0033FF;
 }
@@ -58,12 +37,6 @@ a.current {
 }
 label.error {
     color: #f60;
-}
-input.defaultButton {
-    /*color: #DEB887;
-	background: #320;*/
-    color: black;
-    background-color: auto;
 }
 #container {
     background-color: #fff;
@@ -123,14 +96,10 @@ input.defaultButton {
 }
 #breadcrumb {
     font-family: sans-serif;
-    /*height: 18px;*/
     line-height: 1.5em;
-    /*text-align: center;*/
     margin: 1rem;
-    /*border-bottom: 1px dotted #DEB887;*/
     border-bottom: none;
     padding: 0;
-    /*font-style: italic;*/
 }
 #breadcrumb a:hover {
     text-decoration: underline;
@@ -240,7 +209,6 @@ div.separator {
 #rightSidebar div.block span.blockTitle {
     padding: 0;
     font-weight: bold;
-    /*color: #006699;*/
 }
 #sidebar label {
     font-weight: bold;
@@ -379,7 +347,6 @@ h4.tocSectionTitle {
 #issueCoverImage a:hover img,
 .issueCoverImage a:hover img {
     box-shadow: 0 0 .25rem #ff6c00;
-    /*#069;*/
 }
 #content h4.tocSectionTitle {
     margin-right: 0;
@@ -559,7 +526,7 @@ body {
         display: table-cell;
         vertical-align: middle;
     }
-    @media screen and (min-width: 720px) {
+    @media screen and (min-width: 50rem) {
         #cookiePolicy {
             width: auto;
             max-width: 35%;
@@ -571,6 +538,105 @@ body {
         }
     }
     /* FOOTER END */
+    /* Narrow layout */
+    @media screen and (max-width: 50rem) {
+        #navbar {
+            margin-right: 0rem;
+        }
+        #content,
+        #breadcrumb {
+            margin-right: 1rem;
+        }
+        /* Hide/show menu START */
+        #header h1 img {
+            margin-left: 0rem;
+        }
+        #sidebar {
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            /* half of banner-height */
+            top: 51px;
+            /* half of own height */
+            margin-top: -2em;
+            right: .5rem;
+            width: 4em;
+            height: 4em;
+            border: 1px solid gray;
+            border-radius: .25em;
+            box-shadow: 0 0 .75em #ccc;
+            background-color: white;
+            background-color: rgba(255, 255, 255, 0.75);
+        }
+        #sidebar:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            box-sizing: border-box;
+            margin: auto;
+            height: 70%;
+            width: 80%;
+            border-top: .5em solid black;
+            border-bottom: .5em solid black;
+            z-index: 1;
+        }
+        #sidebar:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            background-color: gray;
+            border-radius: .5em;
+            box-sizing: border-box;
+            margin: auto;
+            height: .5em;
+            width: 80%;
+            z-index: 1;
+        }
+        #sidebar:hover::after,
+        #sidebar:focus::after {
+            background-color: orange;
+            border-color: black !important;
+        }
+        #sidebar:hover::after,
+        #sidebar:focus::after,
+        #sidebar:hover::before,
+        #sidebar:focus::before {
+            z-index: 2;
+        }
+        #rightSidebar {
+            display: none;
+            margin: 0;
+            margin-top: .5rem;
+            padding: 1rem;
+            position: absolute;
+            z-index: 1;
+            top: 100%;
+            right: -.25rem;
+            min-width: 10rem;
+            box-sizing: border-box;
+            border-radius: .25rem;
+        }
+        #sidebar:hover,
+        #sidebar:focus {
+            background-color: white;
+            background-color: rgba(255, 255, 255, 0.95);
+            z-index: 10;
+        }
+        #sidebar:hover #rightSidebar,
+        #sidebar:focus #rightSidebar {
+            box-shadow: 0 0 .25rem black;
+            display: block;
+            background-color: white;
+            background-color: rgba(255, 255, 255, 0.95);
+        }
+    }
+    /* Hide/show menu END */
     /* Styles for HTML fulltext articles START */
     #pp-ojs-article p,
     #pp-ojs-article li {
@@ -1035,100 +1101,6 @@ body {
         }
     }
     /* Styles for HTML fulltext articles END */
-    /* Narrow layout */
-    @media screen and (max-width: 50rem) {
-        #navbar {
-            margin-right: 0rem;
-        }
-        #content,
-        #breadcrumb {
-            margin-right: 1rem;
-        }
-        /* Hide/show menu START */
-        @media screen and (max-width: 50rem) {
-            #sidebar {
-                position: absolute;
-                margin: 0;
-                padding: 0;
-                top: .75rem;
-                right: 1.25rem;
-                width: 4em;
-                height: 4em;
-                border: 1px solid gray;
-                border-radius: .25em;
-                box-shadow: 0 0 .75em #ccc;
-                background: rgba(255, 255, 255, 0.51);
-            }
-            #sidebar:before {
-                content: "";
-                position: absolute;
-                left: 0;
-                top: 0;
-                bottom: 0;
-                right: 0;
-                box-sizing: border-box;
-                margin: auto;
-                height: 70%;
-                width: 80%;
-                border-top: .5em solid black;
-                border-bottom: .5em solid black;
-                z-index: 1;
-            }
-            #sidebar:after {
-                content: "";
-                position: absolute;
-                left: 0;
-                top: 0;
-                bottom: 0;
-                right: 0;
-                background-color: gray;
-                border-radius: .5em;
-                box-sizing: border-box;
-                margin: auto;
-                height: .5em;
-                width: 80%;
-                z-index: 1;
-            }
-            #sidebar:hover::after,
-            #sidebar:focus::after {
-                background-color: orange;
-                border-color: black !important;
-            }
-            #sidebar:hover::after,
-            #sidebar:focus::after,
-            #sidebar:hover::before,
-            #sidebar:focus::before {
-                z-index: 2;
-            }
-            #rightSidebar {
-                display: none;
-                margin: 0;
-                padding: 1rem;
-                padding-top: 5.5rem;
-                position: absolute;
-                z-index: 1;
-                top: -.5rem;
-                right: -.25rem;
-                min-width: 10rem;
-                box-sizing: border-box;
-                border-radius: .25rem;
-            }
-            #sidebar:hover,
-            #sidebar:focus {
-                background-color: white;
-                right: .3rem;
-                z-index: 10;
-            }
-            #sidebar:hover #rightSidebar,
-            #sidebar:focus #rightSidebar {
-                box-shadow: 0 0 .25rem black;
-                display: block;
-                background-color: white;
-                background-color: rgba(255, 255, 255, 0.62);
-            }
-        }
-        /* Hide/show menu END */
-    }
     /* Print stylesheet START */
     @media print {
         #pp-ojs-article {
