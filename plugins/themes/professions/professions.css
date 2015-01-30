@@ -17,14 +17,9 @@ a {
 }
 a:link {
     color: #0033FF;
+    line-height: 1em;
 }
 a:active,
-a:focus {
-    color: white;
-    background: #FF6C00;
-    margin: -.25em;
-    padding: .25em;
-}
 a:visited {
     color: purple;
 }
@@ -32,6 +27,28 @@ a:hover {
     color: red;
     background: white;
 }
+a:focus {
+    outline: 1px dotted #838383;
+    box-shadow: 0 0 .25em black;
+}
+
+input[type="text"],
+input[type="password"],
+input.textField,
+select.selectMenu,
+textarea.textArea,
+input.uploadField {
+    border: 1px solid gray;
+    background-color: white;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus {
+    border-color: black;
+    box-shadow: 0 0 .25em gray;
+}
+
 a.current {
     font-weight: bold;
 }
@@ -46,6 +63,7 @@ label.error {
 #header {
     min-height: 100px;
     background-color: #fff;
+    box-shadow: 0 0 .5rem gray;
 }
 #headerTitle {
     text-align: center !important;
@@ -53,6 +71,10 @@ label.error {
 #headerTitle a {
     text-decoration: none;
 }
+#headerTitle a:focus {
+    padding: 0;
+}
+#headerTitle a:focus h1 {color: orange;}
 #header h1 {
     line-height: 2.5;
     font-family: "Times New Roman", Times, Georgia, serif;
@@ -142,14 +164,21 @@ div.separator {
 
 /* #navbar START */
 
+#breadcrumb,
+#content {
+    margin-right: 11rem;
+}
+
 #navbar {
-    position: relative;
-    top: -2px;
-    margin-right: 9rem;
-    border-top: 1px solid black;
-    border-bottom: 1px solid #ddd;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    padding-right: 11rem;
+    /*border-bottom: 1px solid #ddd;*/
+    border: none;
     text-align: center;
     background: #f9f9f9;
+    background: linear-gradient(to bottom, rgba(99,99,99,.5)0%, rgba(99,99,99,0.5) 1%, rgba(249,249,249,0.2) 20%, rgba(255,255,255,1) 50%);
 }
 
 #navbar a {
@@ -165,7 +194,7 @@ div.separator {
     display: block;
     background: transparent;
 }
-#navbar,
+
 #navbar li {
     padding: 0;
 }
@@ -195,21 +224,23 @@ div.separator {
 }
 /* #navbar END */
 
+#topBar {margin: 0; padding: 0;}
+
 /* common sidebar styles START */
 
 #sidebar div.block {
-    padding: 0;
     border: none;
     color: #3b3b3b;
 }
 
 #rightSidebar div.block span.blockTitle {
-    padding: 0;
     font-weight: bold;
 }
 #sidebar label {
     font-weight: bold;
 }
+
+#sidebar .blockTitle {clear: both; }
 
 /* common sidebar styles END */
 
@@ -231,9 +262,8 @@ div.separator {
     border-bottom: none;
 }
 
-#sidebar div.block:not(:first-child) {
-    margin-top: 1.5rem;
-}
+#sidebar div.block {padding: .25rem .5rem;}
+#sidebar div.block:first-child {padding-top: 0;}
 
 #leftSidebar div.block span.blockSubtitle {
     font-weight: bold;
@@ -244,12 +274,21 @@ div.separator {
 
 #rightSidebar {
     position: relative;
-    background-color: #fbfbfb;
-    padding: .25rem 0.5rem;
-    margin-left: -1rem;
+    /*background-color: #fbfbfb;*/
+    padding: .25rem 0rem;
+    padding-bottom: 1em;
+    /*border-bottom: 1px solid #DDD;*/
+    width: 11rem;
+    margin: 0;
+    margin-left: -12rem;
+    /*background-color: #f9f9f9;*/
+    box-sizing: border-box;
     line-height: 1.5em;
     font-size: .75rem;
+    z-index: 10;
+    box-shadow: 0 0 .5rem rgba(128, 128, 128, 0.75);
 }
+
 #leftSidebar {
     font-size: .75rem;
 }
@@ -276,10 +315,7 @@ div.separator {
 #sidebarLanguageToggle input.button {
     margin-top: .5rem;
 }
-#sidebar form td input[type="submit"]:hover,
-#sidebarLanguageToggle input.button:hover {
-    border-color: black;
-}
+
 #sidebar tr + tr td:first-child {
     margin-top: .5rem;
 }
@@ -295,9 +331,30 @@ div.separator {
 }
 /* siteindex styles for rightsidebar END */
 
-body.home .tocArticleGalleysPages {
+/* body.home .tocArticleGalleysPages */
+
+.tocArticleGalleysPages {
     display: none;
 }
+
+#articleFullText a {
+display: inline-block;
+margin: .25em;
+padding: .5em 1em;
+font-weight: bold;
+font-family: sans-serif; 
+border: 1px solid black;
+border-radius: .3em;
+background-color: black;
+color: white;
+text-decoration: none;
+}
+
+#articleFullText a:hover {
+background-color: #746148;
+box-shadow: 0 0 .5em black;
+}
+
 /* Archives START */
 
 #issues h3,
@@ -443,30 +500,10 @@ body {
 #main {
     width: 100%;
 }
-#content,
-#breadcrumb {
-    margin-right: 10rem;
-}
-#navbar {
-    margin-left: 0;
-}
+
 #main > h2,
 #content {
     margin-left: 1rem;
-}
-#rightSidebar {
-    margin-top: 0;
-    border-bottom: none;
-    margin-right: 0;
-    margin-left: -10rem;
-    width: 8rem;
-    position: relative;
-    z-index: 10;
-    background-color: #f9f9f9;
-}
-
-#rightSidebar > * {
-    margin-left: .5rem;
 }
 
 #main {
@@ -502,7 +539,7 @@ hr {
     float: left;
     clear: left;
     width: 100%;
-    margin-bottom: 1rem;
+    padding-bottom: 1rem;
 }
 #commonPageFooterContent {
     clear: left;
@@ -510,16 +547,21 @@ hr {
 #journalIssn {
     width: 100%;
     float: left;
-    border-bottom: 1px solid #320;
+    /*border-bottom: 1px solid #320;*/
 }
 #pageFooterContentWrapper {
-    border-top: 1px solid #320;
+    border-top: 1px solid gray; /*#320;*/
     margin-top: 2.25rem;
+    margin-left: -1rem;
+    padding-left: 1rem;
+    padding-right: 11rem;
+    background-color: #f9f9f9;
+    background: linear-gradient(to bottom, rgba(99,99,99,.1)0%, rgba(99,99,99,0.1) 1%, rgba(249,249,249,0.2) 20%, rgba(255,255,255,1) 50%);
 }
 /* If #journalIssn that has it's own border, is present, #pageFooterContentWrapper doesn't need the border and margin */
 
 #journalIssn + #pageFooterContentWrapper {
-    border-top: none;
+    /*border-top: none;*/
     margin-top: 0;
 }
 #commonPageFooterContent,
@@ -530,6 +572,10 @@ hr {
     clear: both;
     float: left;
 }
+
+#hostedBy,
+#cookiePolicy {padding-right: 1rem;}
+
 #pageFooter img.hioaFooterLogo {
     float: left;
     margin-right: 1rem;
@@ -541,12 +587,11 @@ hr {
     display: table-cell;
     vertical-align: middle;
 }
-@media screen and (min-width: 50rem) {
+@media screen and (min-width: 50em) {
     #cookiePolicy {
         width: auto;
         max-width: 35%;
         clear: none;
-        float: right;
     }
     #hostedBy {
         max-width: 65%;
@@ -556,7 +601,7 @@ hr {
 
 /* Narrow layout */
 
-@media screen and (max-width: 50rem) {
+@media screen and (max-width: 50em) {
     #header {
         min-height: 4rem;
         box-shadow: 0 1px 0 blue;
@@ -594,6 +639,7 @@ hr {
     #headerTitle a {background-color: transparent;}
     #navbar {
         margin-right: 0rem;
+        padding-right: 0;
     }
     li.currentPage a:not(:hover),
     li.currentPage a:not(:active),
@@ -671,12 +717,13 @@ hr {
         display: none;
         margin: 0;
         margin-top: .5rem;
-        padding: 1rem;
+        padding: .25rem;
         position: absolute;
         z-index: 1;
         top: 100%;
         right: -.25rem;
-        min-width: 10rem;
+        /*min-width: 11rem;*/
+        width: 15rem;
         box-sizing: border-box;
         border-radius: .25rem;
     }
@@ -694,6 +741,21 @@ hr {
         background-color: rgba(255, 255, 255, 0.95);
     }
 }
+
+/* Narrow Layout END */
+
+/* Ultra Narrow Layout Start */
+
+@media screen and (max-width: 20em) {
+    #headerTitle h1 {
+        font-size: 1.25em;
+        /* Base font-size on viewport vidth if supported */
+        font-size: 8vw;
+    }
+    .hioaFooterLogo {display: none;}
+}
+
+/* Ultra Narrow Layout END */
 /* Hide/show menu END */
 
 /* Styles for HTML fulltext articles START */
