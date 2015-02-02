@@ -102,7 +102,7 @@
 <div id="body">
 
 {if $leftSidebarCode || $rightSidebarCode}
-	<div id="sidebar" tabindex="0">
+	<div id="sidebar">
 		{if $leftSidebarCode}
 			<div id="leftSidebar">
 				{$leftSidebarCode}
