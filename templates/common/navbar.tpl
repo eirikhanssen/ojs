@@ -27,7 +27,7 @@
 		{/if}{* $categoriesEnabled *}
 
 		{if !$currentJournal || $currentJournal->getSetting('publishingMode') != $smarty.const.PUBLISHING_MODE_NONE}
-			<li id="search"><a href="{url page="search"}">{translate key="navigation.search"}</a></li>
+			<li id="navItem-search"><a href="{url page="search"}">{translate key="navigation.search"}</a></li>
 		{/if}
 
 		{if $currentJournal && $currentJournal->getSetting('publishingMode') != $smarty.const.PUBLISHING_MODE_NONE}
