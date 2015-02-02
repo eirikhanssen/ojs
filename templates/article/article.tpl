@@ -62,18 +62,14 @@
 	{if $article->getLocalizedAbstract()}
 		<div id="articleAbstract">
 		<h4>{translate key="article.abstract"}</h4>
-		<br />
 		<div>{$article->getLocalizedAbstract()|strip_unsafe_html|nl2br}</div>
-		<br />
 		</div>
 	{/if}
 
 	{if $article->getLocalizedSubject()}
 		<div id="articleSubject">
 		<h4>{translate key="article.subject"}</h4>
-		<br />
 		<div>{$article->getLocalizedSubject()|escape}</div>
-		<br />
 		</div>
 	{/if}
 
@@ -113,13 +109,11 @@
 	{if $citationFactory->getCount()}
 		<div id="articleCitations">
 		<h4>{translate key="submission.citations"}</h4>
-		<br />
 		<div>
 			{iterate from=citationFactory item=citation}
 				<p>{$citation->getRawCitation()|strip_unsafe_html}</p>
 			{/iterate}
 		</div>
-		<br />
 		</div>
 	{/if}
 {/if}
