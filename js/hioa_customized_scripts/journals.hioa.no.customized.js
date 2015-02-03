@@ -95,3 +95,18 @@
 		checkMenuLinks(navlinks.firstElementChild);
 	});
 }());
+
+// add an element to toggle menu on and off for narrow layouts
+(function addToggleMenuToHeader() {
+	$(document).ready(function () {
+		var header = document.getElementById("header");
+		var menuToggle = document.createElement("div");
+		menuToggle.id = "menuToggle";
+		menuToggle.style.position = "absolute";
+		header.appendChild(menuToggle);
+		$("#menuToggle").click(function () {
+			$(this).toggleClass("showMenu");
+			$("#sidebar").toggleClass("showMenu");
+		});
+	});
+})();
