@@ -675,6 +675,7 @@ hr {
 	#menuToggle {
 		box-sizing: border-box;
 		position: absolute;
+		z-index: 5;
 		top: 0;
 		bottom: 0;
 		right: .25rem;
@@ -685,7 +686,14 @@ hr {
 		border-radius: .25rem;
 		background-color: #ccc;
 	}
-	#menuToggle.showMenu, #menuToggle:hover {
+	#obscureLayer {
+		z-index: 3;
+		background-color: rgba(0,0,0,0.4);
+	}
+	.showMenu #obscureLayer {
+		display: block !important;
+	}
+	.showMenu #menuToggle, #menuToggle:hover {
 		background-color: white;
 	}
 	#menuToggle::before, #menuToggle::after {
@@ -710,10 +718,10 @@ hr {
 		border-radius: .2rem;
 		background-color: black;
 	}
-	#menuToggle.showMenu::after, #menuToggle:hover::after {
+	.showMenu #menuToggle:after, #menuToggle:hover::after {
 		background-color: orange;
 	}
-	#sidebar.showMenu {position: relative;
+	.showMenu #sidebar {position: relative;
 		background: red;
 		width: 100%;
 		height: 0;
@@ -734,7 +742,7 @@ hr {
 		background-color: rgba(255, 255, 255, 0.95);
 	}
 
-	#sidebar.showMenu #rightSidebar {
+	.showMenu #sidebar #rightSidebar {
 		display: block;
 	}
 
@@ -752,7 +760,7 @@ hr {
 		font-size: 8vw;
 	}
 	.hioaFooterLogo {display: none;}
-	#sidebar.showMenu #rightSidebar {right: 1rem; left: 1rem; width: auto;}
+	.showMenu #sidebar #rightSidebar {right: 1rem; left: 1rem; width: auto;}
 }
 
 /* Ultra Narrow Layout END */
