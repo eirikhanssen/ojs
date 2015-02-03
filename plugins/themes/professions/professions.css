@@ -81,6 +81,7 @@ div.page_items_info {
 	min-height: 100px;
 	background-color: #fff;
 	box-shadow: 0 0 .5rem gray;
+	position: relative;
 }
 #headerTitle {
 	text-align: center;
@@ -666,99 +667,81 @@ hr {
 	#breadcrumb {
 		margin-right: 1rem;
 	}
-	/* Hide/show menu START */
 	#header h1 img {
 		margin-left: 0rem;
 	}
-	#sidebar {
-		position: absolute;
-		margin: 0;
-		padding: 0;
-		/* half of banner-height */
-		top: 51px;
-		/* half of own height */
-		border: 1px solid gray;
-		border-radius: .25em;
-		box-shadow: 0 0 .75em #ccc;
-		background-color: white;
-		background-color: rgba(255, 255, 255, 0.75);
+
+	/* menuToggle START */
+	#menuToggle {
 		box-sizing: border-box;
-		top: 0.25rem;
+		position: absolute;
+		top: 0;
+		bottom: 0;
 		right: .25rem;
-		height: 3.5rem;
+		margin: auto 0;
 		width: 3.5rem;
+		height: 3.5rem;
+		border: 1px solid gray;
+		border-radius: .25rem;
+		background-color: #ccc;
 	}
-	#sidebar:before {
-		content: "";
+	#menuToggle.showMenu, #menuToggle:hover {
+		background-color: white;
+	}
+	#menuToggle::before, #menuToggle::after {
 		position: absolute;
-		left: 0;
+		margin: auto;
 		top: 0;
 		bottom: 0;
 		right: 0;
-		box-sizing: border-box;
-		margin: auto;
-		height: 70%;
-		width: 80%;
-		border-top: .5em solid black;
-		border-bottom: .5em solid black;
-		z-index: 1;
-	}
-	#sidebar:after {
-		content: "";
-		position: absolute;
 		left: 0;
-		top: 0;
-		bottom: 0;
-		right: 0;
-		background-color: gray;
-		border-radius: .5em;
+		content: "";
+		width: 75%;
 		box-sizing: border-box;
-		margin: auto;
-		height: .5em;
-		width: 80%;
-		z-index: 1;
+		z-index: 0;
 	}
-	#sidebar:hover::after,
-	#sidebar:focus::after {
+	#menuToggle::before {
+		height: 75%;
+		border-top: .4rem solid black;
+		border-bottom: .4rem solid black;
+	}
+	#menuToggle::after {
+		height: .4rem;
+		border-radius: .2rem;
+		background-color: black;
+	}
+	#menuToggle.showMenu::after, #menuToggle:hover::after {
 		background-color: orange;
-		border-color: black !important;
 	}
-	#sidebar:hover::after,
-	#sidebar:focus::after,
-	#sidebar:hover::before,
-	#sidebar:focus::before {
-		z-index: 2;
+	#sidebar.showMenu {position: relative;
+		background: red;
+		width: 100%;
+		height: 0;
 	}
 	#rightSidebar {
 		display: none;
-		margin: 0;
+		margin: 0 auto;
 		margin-top: .5rem;
 		padding: .25rem;
 		position: absolute;
-		z-index: 1;
-		top: 100%;
-		right: -.25rem;
-		/*min-width: 11rem;*/
+		z-index: 10;
+		right: .25rem;
 		width: 15rem;
 		box-sizing: border-box;
 		border-radius: .25rem;
-	}
-	#sidebar:hover,
-	#sidebar:focus {
-		background-color: white;
-		background-color: rgba(255, 255, 255, 0.95);
-		z-index: 10;
-	}
-	#sidebar:hover #rightSidebar,
-	#sidebar:focus #rightSidebar {
-		box-shadow: 0 0 .25rem black;
-		display: block;
+		box-shadow: 0 0 .5rem black;
 		background-color: white;
 		background-color: rgba(255, 255, 255, 0.95);
 	}
-}
 
-/* Narrow Layout END */
+	#sidebar.showMenu #rightSidebar {
+		display: block;
+	}
+
+	/* menuToggle END */
+
+} /* Narrow Layout END */
+
 
 /* Ultra Narrow Layout Start */
 
@@ -769,6 +752,7 @@ hr {
 		font-size: 8vw;
 	}
 	.hioaFooterLogo {display: none;}
+	#sidebar.showMenu #rightSidebar {right: 1rem; left: 1rem; width: auto;}
 }
 
 /* Ultra Narrow Layout END */
