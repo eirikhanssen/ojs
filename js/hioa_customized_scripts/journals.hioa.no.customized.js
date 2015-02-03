@@ -99,14 +99,26 @@
 // add an element to toggle menu on and off for narrow layouts
 (function addToggleMenuToHeader() {
 	$(document).ready(function () {
+		var body = document.getElementsByTagName("body")[0];
 		var header = document.getElementById("header");
 		var menuToggle = document.createElement("div");
+		var obscureLayer = document.createElement("div");
+		obscureLayer.id = "obscureLayer";
+		obscureLayer.style.position = "fixed";
+		obscureLayer.style.display = "none";
+		obscureLayer.style.top = "0";
+		obscureLayer.style.bottom = "0";
+		obscureLayer.style.left = "0";
+		obscureLayer.style.right = "0";
 		menuToggle.id = "menuToggle";
 		menuToggle.style.position = "absolute";
 		header.appendChild(menuToggle);
+		header.appendChild(obscureLayer);
 		$("#menuToggle").click(function () {
-			$(this).toggleClass("showMenu");
-			$("#sidebar").toggleClass("showMenu");
+			$(body).toggleClass("showMenu");
+		});
+		$("#obscureLayer").click(function () {
+			$(body).toggleClass("showMenu");
 		});
 	});
 })();
