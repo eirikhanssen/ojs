@@ -14,6 +14,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset={$defaultCharset|escape}" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, target-densityDpi=device-dpi" />
+	<meta name="format-detection" content="telephone=no" />
 	<title>{$article->getLocalizedTitle()|strip_tags|escape} | {$article->getFirstAuthor(true)|strip_tags|escape} | {$currentJournal->getLocalizedTitle()|strip_tags|escape}</title>
 	<meta name="description" content="{$article->getLocalizedTitle()|strip_tags|escape}" />
 	{if $article->getLocalizedSubject()}
