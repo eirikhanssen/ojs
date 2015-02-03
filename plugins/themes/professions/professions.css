@@ -136,7 +136,7 @@ div.page_items_info {
 }
 
 #main h4, #content h4 {font-size: 1.25em; font-weight: bold;}
-
+h4 + p {margin-top: 0;}
 #main h2,
 #main h3,
 #content h3 {font-variant: small-caps;}
@@ -264,6 +264,8 @@ ul.steplist li.current a {
 	background-color: white;
 }
 
+#rightSidebar > div.block:first-child {background-color: transparent;}
+
 #rightSidebar div.block span.blockTitle {
 	font-weight: bold;
 }
@@ -305,19 +307,15 @@ ul.steplist li.current a {
 
 #rightSidebar {
 	position: relative;
-	/*background-color: #fbfbfb;*/
 	padding: .25rem 0rem;
 	padding-bottom: 1em;
-	/*border-bottom: 1px solid #DDD;*/
 	width: 11rem;
 	margin: 0;
 	margin-left: -12rem;
-	/*background-color: #f9f9f9;*/
 	box-sizing: border-box;
 	line-height: 1.5em;
 	font-size: .75rem;
 	z-index: 10;
-	box-shadow: 0 0 .5rem rgba(128, 128, 128, 0.75);
 }
 
 #leftSidebar {
@@ -541,9 +539,11 @@ hr {
 #pageFooter {
 	margin-top: 2rem;
 	margin-bottom: 1rem;
+	font-family: Arial, sans-serif;
+	font-size: 0.75em;
 }
 
-#pageFooter h4 {font-family: Arial, sans-serif; font-size: 1em;}
+#pageFooter h4 { font-size: 1em;}
 
 #commonPageFooterContent,
 #journalPageFooterContent {
@@ -596,12 +596,15 @@ hr {
 }
 
 #hostedBy,
-#cookiePolicy {padding-right: 1rem;}
+#cookiePolicy {padding-right: .5rem;}
 
 #pageFooter img.hioaFooterLogo {
 	float: left;
 	margin-right: 1rem;
 }
+
+.hioaFooterLogo {width: 50px; height: auto;}
+
 #hostedByHioaLSB {
 	display: table;
 }
@@ -612,11 +615,11 @@ hr {
 @media screen and (min-width: 50em) {
 	#cookiePolicy {
 		width: auto;
-		max-width: 35%;
+		max-width: 45%;
 		clear: none;
 	}
 	#hostedBy {
-		max-width: 65%;
+		max-width: 55%;
 	}
 }
 /* FOOTER END */
@@ -741,7 +744,7 @@ hr {
 		background-color: white;
 		background-color: rgba(255, 255, 255, 0.95);
 	}
-
+	
 	.showMenu #sidebar #rightSidebar {
 		display: block;
 	}
@@ -753,11 +756,11 @@ hr {
 
 /* Ultra Narrow Layout Start */
 
-@media screen and (max-width: 20em) {
+@media screen and (max-width: 30em) {
 	#headerTitle h1 {
 		font-size: 1.25em;
 		/* Base font-size on viewport vidth if supported */
-		font-size: 8vw;
+		font-size: 7vw;
 	}
 	.hioaFooterLogo {display: none;}
 	.showMenu #sidebar #rightSidebar {right: 1rem; left: 1rem; width: auto;}
