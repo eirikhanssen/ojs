@@ -632,7 +632,6 @@ hr {
 @media screen and (max-width: 50em) {
 	/*#header {
 		min-height: 4rem;
-		box-shadow: 0 1px 0 blue;
 	}
 	#headerTitle h1 img {
 		display: none;
@@ -696,7 +695,6 @@ hr {
 	}
 	#obscureLayer {
 		z-index: 3;
-		background-color: rgba(0,0,0,0.4);
 	}
 	.showMenu #obscureLayer {
 		display: block !important;
