@@ -33,7 +33,7 @@
  */
 
 a:link {
-	color: #375;
+	color: #03f;
 }
 
 a:active {
@@ -41,12 +41,11 @@ a:active {
 }
 
 a:visited {
-	color: #375;
+	color: purple;
 }
 
 a:hover {
-	color: #253;
-	background: #CDC;
+	color: red;
 }
 
 
