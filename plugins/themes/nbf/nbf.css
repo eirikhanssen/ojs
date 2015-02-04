@@ -5,14 +5,18 @@
  * Copyright (c) 2003-2014 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * Responsive theme for Nordisk Barnehageforskning, based on classicBrown theme
+ * Responsive theme for Nordisk Barnehageforskning, based on Vanilla theme
  */
 
 body {
 	background-color: #fff;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 }
-h1, h2, h3 {font-family: Georgia, "Times New Roman", Times, serif;}
+h1,
+h2,
+h3 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
 a {
 	text-decoration: none;
 }
@@ -26,13 +30,15 @@ a:visited {
 }
 a:hover {
 	color: red;
-	background: white;
 }
 a:focus {
 	outline: 1px dotted #838383;
 }
-a.action, a.file {font-size: 1em; text-transform: none;}
-
+a.action,
+a.file {
+	font-size: 1em;
+	text-transform: none;
+}
 input[type="text"],
 input[type="password"],
 input.textField,
@@ -49,7 +55,7 @@ textarea:focus {
 	border-color: black;
 	box-shadow: 0 0 .25em gray;
 }
-#sizer{ background-color: white;}
+
 a.current {
 	font-weight: bold;
 }
@@ -59,7 +65,6 @@ label.error {
 .issn {
 	margin-bottom: .25rem;
 }
-
 div.page_items_info {
 	text-align: right;
 	float: right;
@@ -68,7 +73,6 @@ div.page_items_info {
 	font-weight: bold;
 	color: gray;
 }
-
 #container {
 	background-color: #fff;
 	font-size: 1em;
@@ -77,38 +81,16 @@ div.page_items_info {
 	margin: 0px auto;
 	text-align: center;
 }
-
-#header {
-	min-height: 100px;
-	background-color: #fff;
-	position: relative;
-}
-#headerTitle {
-	text-align: center;
-}
-#headerTitle a {
-	text-decoration: none;
-}
-#headerTitle a:focus {
-	padding: 0;
-}
-#headerTitle a:focus h1 {color: orange;}
-#header h1 {
-	line-height: 2.5em;
-	font-family: Georgia, "Times New Roman", Times, serif;
-	letter-spacing: 10px;
-	font-size: 2em;
-	background-color: #b1dccf;
-	color: #fff;
-}
 #journalDescription + br,
 #additionalHomeContent + br {
 	display: none;
 }
 #main h3 {
-	margin: 1em 1rem 0 0
+	margin: 1em 0 0 0
 }
-#main h3 + p {margin-top: .25rem;}
+#main h3 + p {
+	margin-top: .25rem;
+}
 #main > h3 {
 	margin-left: 1rem;
 }
@@ -119,7 +101,10 @@ div.page_items_info {
 #footerContent {
 	color: #fff;
 }
-#main h3, #content h3 {padding-top: 0;}
+#main h3,
+#content h3 {
+	padding-top: 0;
+}
 #main {
 	background-color: #fff;
 	border-top: 1px solid yellow;
@@ -132,26 +117,32 @@ div.page_items_info {
 #content h3 {
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
-#content h4, #content h5 {
+#content h4,
+#content h5 {
 	font-family: Arial, sans-serif;
 }
-
-#main h4, #content h4 {font-size: 1.25em; font-weight: bold;}
-h4 + p {margin-top: 0;}
+#main h4,
+#content h4 {
+	font-size: 1.25em;
+	font-weight: bold;
+}
+h4 + p {
+	margin-top: 0;
+}
 #main h2,
 #main h3,
-
 #breadcrumb {
 	font-family: sans-serif;
 	line-height: 1.5em;
-	margin: 1rem;
 	border-bottom: none;
 	padding: 0;
 }
+#main h2,
+#breadcrumb {margin: 1em;}
+
 #breadcrumb a:hover {
 	text-decoration: underline;
 }
-
 span.highlight {
 	border-bottom: 1px dotted #DEB887;
 }
@@ -176,23 +167,21 @@ ul.formErrorList {
 div.separator {
 	border-bottom: 1px dotted #DEB887;
 }
-
-ul.menu a, ul.steplist li {
+ul.menu a,
+ul.steplist li {
 	font-family: arial, sans-serif;
 	font-size: 1em;
 }
-
 ul.steplist li.current a {
 	color: black;
 }
-
 /* #navbar START */
 
 #breadcrumb,
 #content {
-	margin-right: 12rem; /*#pageFooterContentWrapper og #navbar må ha samme padding-right som denne margin-right */
+	margin-right: 12rem;
+	/*#pageFooterContentWrapper og #navbar må ha samme padding-right som denne margin-right */
 }
-
 #navbar {
 	margin-left: 0;
 	margin-right: 0;
@@ -202,9 +191,7 @@ ul.steplist li.current a {
 	border: none;
 	text-align: center;
 	background: #f9f9f9;
-	background: linear-gradient(to bottom, rgba(99,99,99,.5)0%, rgba(99,99,99,0.5) 1%, rgba(249,249,249,0.2) 20%, rgba(255,255,255,1) 50%);
 }
-
 #navbar a {
 	color: black;
 	font-size: 0.65em;
@@ -213,17 +200,14 @@ ul.steplist li.current a {
 #navbar a:hover {
 	color: white;
 }
-
 #navbar ul {
 	display: block;
 	background: transparent;
 }
-
 #navbar ul.menu a {
 	text-transform: none;
 	font-size: .75em;
 }
-
 #navbar li {
 	padding: 0;
 }
@@ -239,8 +223,8 @@ ul.steplist li.current a {
 	display: inline-block;
 }
 #navbar .menu li a:hover {
-	background-color: #746148;
-	color: white;
+	background-color: #beefe0;
+	color: black;
 }
 #navbar .menu li a:focus {
 	background-color: #FF6C00;
@@ -248,23 +232,23 @@ ul.steplist li.current a {
 }
 #navbar li.currentPage a {
 	/*	background-color: #320;*/
-	background-color: #33291d;
-	background: linear-gradient(to bottom, #000000 0%, #444444 1%, #262626 26%, #000000 64%, #000000 100%);
-	color: white;
+	background-color: #b1dccf;
+	color: black;
+	/*background: linear-gradient(to bottom, #000000 0%, #444444 1%, #262626 26%, #000000 64%, #000000 100%);*/
 }
 /* #navbar END */
 
-#topBar {margin: 0; padding: 0;}
-
+#topBar {
+	margin: 0;
+	padding: 0;
+}
 /* common sidebar styles START */
 
-#sidebar div.block {
+#sidebar div.block, #sizer {
 	border: none;
 	color: #3b3b3b;
-	background-color: white;
+	background-color: #f9f9f9;
 }
-
-#rightSidebar > div.block:first-child {background-color: transparent;}
 
 #rightSidebar div.block span.blockTitle {
 	font-weight: bold;
@@ -272,9 +256,9 @@ ul.steplist li.current a {
 #sidebar label {
 	font-weight: bold;
 }
-
-#sidebar .blockTitle {clear: both; }
-
+#sidebar .blockTitle {
+	clear: both;
+}
 /* common sidebar styles END */
 
 /* Sidebar START */
@@ -294,17 +278,18 @@ ul.steplist li.current a {
 	margin-top: 5px;
 	border-bottom: none;
 }
-
-#sidebar div.block {padding: .25rem .5rem;}
-#sidebar div.block:first-child {padding-top: 0;}
-
+#sidebar div.block {
+	padding: .25rem .5rem;
+}
+#sidebar div.block:first-child {
+	padding-top: 0;
+}
 #leftSidebar div.block span.blockSubtitle {
 	font-weight: bold;
 }
 #rightSidebar div.block span.blockSubtitle {
 	font-weight: bold;
 }
-
 #rightSidebar {
 	position: relative;
 	padding: .25rem 0rem;
@@ -316,8 +301,8 @@ ul.steplist li.current a {
 	line-height: 1.5em;
 	font-size: .75rem;
 	z-index: 10;
+	background-color: "f9f9f9";
 }
-
 #leftSidebar {
 	font-size: .75rem;
 }
@@ -344,7 +329,6 @@ ul.steplist li.current a {
 #sidebarLanguageToggle input.button {
 	margin-top: .5rem;
 }
-
 #sidebar tr + tr td:first-child {
 	margin-top: .5rem;
 }
@@ -361,34 +345,31 @@ ul.steplist li.current a {
 /* siteindex styles for rightsidebar END */
 
 /* body.home .tocArticleGalleysPages */
-
+/*
 .tocArticleGalleysPages {
 	display: none;
-}
-
+}*/
 #articleFullText a {
-display: inline-block;
-margin: .25em;
-padding: .5em 1em;
-font-weight: bold;
-font-family: sans-serif; 
-border: 1px solid black;
-border-radius: .3em;
-background-color: black;
-color: white;
-text-decoration: none;
+	display: inline-block;
+	margin: .25em;
+	padding: .5em 1em;
+	font-weight: bold;
+	font-family: sans-serif;
+	border: 1px solid black;
+	border-radius: .3em;
+	background-color: black;
+	color: white;
+	text-decoration: none;
 }
-
 #articleFullText a:hover {
-background-color: #746148;
-box-shadow: 0 0 .5em black;
+	background-color: #746148;
+	box-shadow: 0 0 .5em black;
 }
-
 /* Archives START */
 
 #issues h3,
 h4.tocSectionTitle {
-	border-bottom: 1px solid #DEB887;
+	border-bottom: 1px solid #5c9f8a; /*#b1dccf;*/
 	margin-top: 1em;
 }
 #issues .issueCoverImage {
@@ -459,6 +440,7 @@ h4.tocSectionTitle {
 /* Archives END */
 
 /* from journalstylesheet */
+
 table.tocArticle + table.tocArticle {
 	margin-top: 1em;
 }
@@ -479,7 +461,6 @@ a {
 	background-color: #FFFFFF;
 	color: black;
 }
-
 body {
 	margin: 0;
 	width: 100%;
@@ -498,34 +479,18 @@ body {
 	max-width: 80rem;
 	margin: auto;
 }
-/*
-#header h1 {
-	padding: 0;
-	margin: 0;
-	background-color: black;
-	background-image: url(https://journals.hioa.no/public/journals/2/ppheader-strip.png);
-}
-#header h1 img {
-	display: block;
-	margin: auto;
-}*/
-/*
-#header h1 {
-	padding: 0.5em 0 0.25em 0;
-	background-color: #FFFFFF;
-}*/
 #main {
 	width: 100%;
 }
-
-#main > h2 {margin-left: 1rem;}
+#main > h2 {
+	margin-left: 1rem;
+}
 #content {
 	font-size: 0.85em;
 	padding: 0.5em 0 0;
 	margin-left: 1rem;
 	border-top: none;
 }
-
 #main {
 	margin-top: 0;
 	padding: 0;
@@ -537,17 +502,56 @@ hr {
 #main > h2 + #content {
 	border-top: 1px solid #320;
 }
+/* HEADER START */
+
+#header {
+	box-sizing: border-box;
+	background: #b1dccf;
+
+	min-height: 4rem;
+	position: relative;
+}
+#headerTitle {
+	background: #b1dccf;
+	height: auto;
+	/*padding: 1rem;*/
+}
+#headerTitle h1 {
+	text-transform: uppercase;
+	line-height: 1.25em;
+	text-align: center;
+	padding: 1rem;
+}
+#headerTitle .enTitle {
+	border-top: 1px solid white;
+	display: block;
+	text-transform: none;
+	font-size: .8em;
+	color: #743c3c;
+	font-weight: normal;
+	display: block;
+}
+#header a {
+	width: 100%;
+	display: block;
+	color: black;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+/* HEADER END */
+
 /* FOOTER START */
 
 #pageFooter {
 	margin-top: 2rem;
 	margin-bottom: 1rem;
 	font-family: Arial, sans-serif;
-	font-size: 0.75em;
+	font-size: 0.9em;
 }
-
-#pageFooter h4 { font-size: 1em;}
-
+#pageFooter h4 {
+	font-size: 1em;
+}
 #commonPageFooterContent,
 #journalPageFooterContent {
 	float: left;
@@ -565,14 +569,15 @@ hr {
 	clear: left;
 	width: 100%;
 	padding-bottom: 1rem;
-	border-top: 1px solid gray; /*#320;*/
-	margin-top: 2.25rem; /*eller 0?*/
+	border-top: 1px solid gray;
+	/*#320;*/
+	margin-top: 2.25rem;
+	/*eller 0?*/
 	margin-left: -1rem;
 	padding-left: 1rem;
 	padding-right: 12rem;
 	background-color: white;
-	background: linear-gradient(to bottom, rgba(99,99,99,.1)0%, rgba(99,99,99,0.1) 1%, rgba(249,249,249,0.2) 20%, rgba(255,255,255,1) 50%);
-
+	background: linear-gradient(to bottom, rgba(99, 99, 99, .1)0%, rgba(99, 99, 99, 0.1) 1%, rgba(249, 249, 249, 0.2) 20%, rgba(255, 255, 255, 1) 50%);
 }
 #commonPageFooterContent {
 	clear: left;
@@ -580,9 +585,7 @@ hr {
 #journalIssn {
 	width: 100%;
 	float: left;
-	/*border-bottom: 1px solid #320;*/
 }
-
 /* If #journalIssn that has it's own border, is present, #pageFooterContentWrapper doesn't need the border and margin */
 
 #journalIssn + #pageFooterContentWrapper {
@@ -597,17 +600,18 @@ hr {
 	clear: both;
 	float: left;
 }
-
 #hostedBy,
-#cookiePolicy {padding-right: .5rem;}
-
+#cookiePolicy {
+	padding-right: .5rem;
+}
 #pageFooter img.hioaFooterLogo {
 	float: left;
 	margin-right: 1rem;
 }
-
-.hioaFooterLogo {width: 50px; height: auto;}
-
+.hioaFooterLogo {
+	width: 50px;
+	height: auto;
+}
 #hostedByHioaLSB {
 	display: table;
 }
@@ -630,42 +634,12 @@ hr {
 /* Narrow layout */
 
 @media screen and (max-width: 50em) {
-	/*#header {
-		min-height: 4rem;
-	}
-	#headerTitle h1 img {
-		display: none;
-		position: relative;
-	}
-	#headerTitle h1::before {
-		position: relative;
-		content: "nbf & Professionalism";
-		left: 4%;
-		margin-right: 1rem;
-	}
-	#headerTitle {
-		display: table;
-	}
+	/* narrow HEADER START*/
+	#header {padding-right: 4rem;}
 	#headerTitle h1 {
-		display: table-cell;
-		vertical-align: middle;
-		text-transform: none;
-		letter-spacing: 0.05em;
-		line-height: .85em;
-		font-size: 1.75rem;
-		padding-left: .5rem;
-		padding-right: 4rem;
+	font-size: 4vw;
 	}
-	#headerTitle,
-	#headerTitle h1 {
-		height: 4rem;
-		background-color: black;
-		background: linear-gradient(to bottom, #000000 0%, #000000 36%, #262626 74%, #444444 99%, #000000 100%);
-	}
-	#header #headerTitle h1 {
-		background-image: none;
-	}
-	#headerTitle a {background-color: transparent;}
+	/* narrow HEADER END */
 	#navbar {
 		margin-right: 0rem;
 		padding-right: 0;
@@ -674,10 +648,6 @@ hr {
 	#breadcrumb {
 		margin-right: 1rem;
 	}
-	#header h1 img {
-		margin-left: 0rem;
-	}*/
-
 	/* menuToggle START */
 	#menuToggle {
 		box-sizing: border-box;
@@ -699,10 +669,12 @@ hr {
 	.showMenu #obscureLayer {
 		display: block !important;
 	}
-	.showMenu #menuToggle, #menuToggle:hover {
+	.showMenu #menuToggle,
+	#menuToggle:hover {
 		background-color: white;
 	}
-	#menuToggle::before, #menuToggle::after {
+	#menuToggle::before,
+	#menuToggle::after {
 		position: absolute;
 		margin: auto;
 		top: 0;
@@ -724,10 +696,12 @@ hr {
 		border-radius: .2rem;
 		background-color: black;
 	}
-	.showMenu #menuToggle:after, #menuToggle:hover::after {
+	.showMenu #menuToggle:after,
+	#menuToggle:hover::after {
 		background-color: orange;
 	}
-	.showMenu #sidebar {position: relative;
+	.showMenu #sidebar {
+		position: relative;
 		background: red;
 		width: 100%;
 		height: 0;
@@ -747,15 +721,12 @@ hr {
 		background-color: white;
 		background-color: rgba(255, 255, 255, 0.95);
 	}
-	
 	.showMenu #sidebar #rightSidebar {
 		display: block;
 	}
-
 	/* menuToggle END */
-
-} /* Narrow Layout END */
-
+}
+/* Narrow Layout END */
 
 /* Ultra Narrow Layout Start */
 
@@ -763,13 +734,19 @@ hr {
 	#headerTitle h1 {
 		font-size: 1.25em;
 		/* Base font-size on viewport vidth if supported */
-		font-size: 7vw;
+font-size: 4vw;
 	}
-	.hioaFooterLogo {display: none;}
-	.showMenu #sidebar #rightSidebar {right: 1rem; left: 1rem; width: auto;}
+	.hioaFooterLogo {
+		display: none;
+	}
+	.showMenu #sidebar #rightSidebar {
+		right: 1rem;
+		left: 1rem;
+		width: auto;
+	}
 }
-
 /* Ultra Narrow Layout END */
+
 /* Hide/show menu END */
 
 /* Styles for HTML fulltext articles START */
