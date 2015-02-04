@@ -20,7 +20,7 @@
 	$(document).ready(function () {
 		var headerTitle = document.getElementById("headerTitle");
 		var newHeaderHTMLno = 'TECHNE <span>SERIEN</span> <span class="subheading">Forskning i slöydpedagogik och slöydvetenskap</span>';
-		var newHeaderHTMLen = 'TECHNE <span>SERIES</span> <span class="subheading">Research in Sloyd education and Craft Science</span>';
+		var newHeaderHTMLen = 'TECHNE <span>SERIES</span> <span class="subheading">Research in Sloyd Education and Craft Science</span>';
 		var headerNoSearchPattern = /^techne serien/;
 		var headerEnSearchPattern = /^techne series/;
 		var headerTitleH1 = headerTitle.getElementsByTagName("h1")[0];
