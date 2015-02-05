@@ -86,7 +86,8 @@ div.page_items_info {
 	display: none;
 }
 #main h3 {
-	margin: 1em 0 0 0
+	margin: 1em 0 0 0;
+	font-size: 1.8em;
 }
 #main h3 + p {
 	margin-top: .25rem;
@@ -94,6 +95,7 @@ div.page_items_info {
 #main > h3 {
 	margin-left: 1rem;
 }
+#authorString {margin-top: .5rem;}
 #footer {
 	background-color: #320;
 	color: #fff;
@@ -105,6 +107,7 @@ div.page_items_info {
 #content h3 {
 	padding-top: 0;
 }
+#content p, #content li, #content div {line-height: 1.5em;}
 #main {
 	background-color: #fff;
 	border-top: 1px solid yellow;
@@ -114,31 +117,33 @@ div.page_items_info {
 }
 #main h2,
 #main h3,
-#content h3 {
-	font-family: Georgia, "Times New Roman", Times, serif;
-}
+#content h3,
 #content h4,
 #content h5 {
-	font-family: Arial, sans-serif;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+#articleTitle h3 {font-size: 2.5em;}
+#pageFooter h4, #pageFooter h5{
+	font-family: Helvetica, Arial, sans-serif;
 }
 #main h4,
 #content h4 {
 	font-size: 1.25em;
 	font-weight: bold;
 }
+#issues h4 {font-weight: normal;}
 h4 + p {
 	margin-top: 0;
 }
 #main h2,
 #main h3,
 #breadcrumb {
-	font-family: sans-serif;
 	line-height: 1.5em;
 	border-bottom: none;
 	padding: 0;
 }
-#main h2,
-#breadcrumb {margin: 1em;}
+
+#breadcrumb {margin: 1em; font-family: Helvetica, Arial, sans-serif;}
 
 #breadcrumb a:hover {
 	text-decoration: underline;
@@ -473,6 +478,16 @@ body {
 }
 #main h2 {
 	display: block;
+	font-size: 2em;
+	margin-top: 1em;
+	margin-right: .5rem;
+	margin-bottom: .5rem;
+	margin-left: 1rem;
+}
+@media screen and (min-width: 50em) {
+	#main h2 {
+		margin-right: 12rem;
+	}
 }
 body {
 	max-width: 80em;
@@ -482,9 +497,7 @@ body {
 #main {
 	width: 100%;
 }
-#main > h2 {
-	margin-left: 1rem;
-}
+
 #content {
 	font-size: 0.85em;
 	padding: 0.5em 0 0;
@@ -669,9 +682,9 @@ hr {
 	.showMenu #obscureLayer {
 		display: block !important;
 	}
-	.showMenu #menuToggle,
 	#menuToggle:hover {
-		background-color: white;
+		background-color: #ddd;
+		box-shadow: 0 0 .5rem white;
 	}
 	#menuToggle::before,
 	#menuToggle::after {
@@ -696,9 +709,11 @@ hr {
 		border-radius: .2rem;
 		background-color: black;
 	}
-	.showMenu #menuToggle:after,
-	#menuToggle:hover::after {
+	.showMenu #menuToggle::after {
 		background-color: orange;
+	}
+	.showMenu #menuToggle {
+		background-color: white;
 	}
 	.showMenu #sidebar {
 		position: relative;

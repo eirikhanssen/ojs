@@ -107,12 +107,14 @@ div.page_items_info {
 	display: none;
 }
 #main h3 {
-	margin: 1em 1rem 0 0
+	margin: 1em 1rem 0 0;
+	font-size: 1.8em;
 }
 #main h3 + p {margin-top: .25rem;}
 #main > h3 {
 	margin-left: 1rem;
 }
+#authorString {margin-top: .5rem;}
 #footer {
 	background-color: #320;
 	color: #fff;
@@ -120,7 +122,8 @@ div.page_items_info {
 #footerContent {
 	color: #fff;
 }
-#main h3, #content h3 {padding-top: 0;}
+#main h3 {padding-top: 0; margin-right: 0;}
+#content p, #content li, #content div {line-height: 1.5em;}
 #main {
 	background-color: #fff;
 	border-top: 1px solid yellow;
@@ -130,14 +133,21 @@ div.page_items_info {
 }
 #main h2,
 #main h3,
-#content h3 {
+#content h3,
+#content h5 {
 	font-family: "Times New Roman", Times, Georgia, serif;
 }
-#content h4, #content h5 {
-	font-family: Arial, sans-serif;
+#articleTitle h3 {font-size: 2.5em; line-height: 1em;}
+#pageFooter h4, #pageFooter h5 {
+	font-family: Helvetica, Arial, sans-serif;
 }
 
-#main h4, #content h4 {font-size: 1.25em; font-weight: bold;}
+#main h4 {
+	font-size: 1.25em;
+	font-weight: bold;
+	font-family: Helvetica, Arial, sans-serif;
+}
+#issues h4 {font-family: "Times New Roman", Times, Georgia, serif; font-weight: normal;}
 h4 + p {margin-top: 0;}
 #main h2,
 #main h3,
@@ -497,7 +507,19 @@ body {
 }
 #main h2 {
 	display: block;
+	font-size: 2em;
+	margin-top: 1em;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	margin-bottom: .5rem;
 }
+
+@media screen and (min-width: 50em) {
+	#main h2 {
+		margin-right: 12rem;
+	}
+}
+
 body {
 	max-width: 80em;
 	max-width: 80rem;
@@ -517,7 +539,6 @@ body {
 	width: 100%;
 }
 
-#main > h2 {margin-left: 1rem;}
 #content {
 	font-size: 0.85em;
 	padding: 0.5em 0 0;
@@ -698,8 +719,9 @@ hr {
 	.showMenu #obscureLayer {
 		display: block !important;
 	}
-	.showMenu #menuToggle, #menuToggle:hover {
-		background-color: white;
+	#menuToggle:hover {
+		background-color: #ddd;
+		box-shadow: 0 0 .5rem #fff;
 	}
 	#menuToggle::before, #menuToggle::after {
 		position: absolute;
@@ -723,7 +745,10 @@ hr {
 		border-radius: .2rem;
 		background-color: black;
 	}
-	.showMenu #menuToggle:after, #menuToggle:hover::after {
+	.showMenu #menuToggle {
+		background-color: white;
+	}
+	.showMenu #menuToggle:after {
 		background-color: orange;
 	}
 	.showMenu #sidebar {position: relative;
