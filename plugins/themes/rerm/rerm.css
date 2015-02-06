@@ -191,7 +191,7 @@ ul.steplist li.current a {
 	margin-left: 0;
 	margin-right: 0;
 	padding: 0;
-	padding-right: 11rem;
+	/*padding-right: 11rem;/ /*since menu now is placed below the navbar, we don't need this padding */
 	border: none;
 	border-bottom: 1px solid #444;
 	border-top: 1px solid #444;
