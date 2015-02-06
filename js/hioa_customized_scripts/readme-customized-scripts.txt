@@ -106,3 +106,16 @@ Copy this code inside the footer (HTML edit mode):
 
 <!-- Customized JavaScript for TECHNE: fix header styling markup -->
 <script type="text/javascript" src="/js/hioa_customized_scripts/techne.customized.js"></script>
+
+
+FLEKS
+Not ideal, but a compromise with the old banner
+- Fix html-markup of the page header
+- Hide for sighted users (text is in background image), but not for screen reader users
+- For ultra narrow layout, show 'FLEX' and remove background (done with CSS)
+
+Copy this code inside the footer (HTML edit mode):
+
+<!-- Customized JavaScript for FLEKS: fix header styling markup -->
+<script type="text/javascript" src="/js/hioa_customized_scripts/fleks.customized.js"></script>
+
