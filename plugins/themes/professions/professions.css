@@ -79,12 +79,12 @@ div.page_items_info {
 }
 #header {
 	min-height: 100px;
-	background-color: #fff;
-	box-shadow: 0 0 .5rem gray;
+	background-color: black;
 	position: relative;
 }
 #headerTitle {
 	text-align: center;
+	height: auto;
 }
 #headerTitle a {
 	text-decoration: none;
@@ -102,6 +102,7 @@ div.page_items_info {
 	background-color: #320;
 	color: #fff;
 }
+#headerTitle #insertedByHiOAscript {display:none;}
 #journalDescription + br,
 #additionalHomeContent + br {
 	display: none;
@@ -213,8 +214,7 @@ ul.steplist li.current a {
 	/*border-bottom: 1px solid #ddd;*/
 	border: none;
 	text-align: center;
-	background: #f9f9f9;
-	background: linear-gradient(to bottom, rgba(99,99,99,.5)0%, rgba(99,99,99,0.5) 1%, rgba(249,249,249,0.2) 20%, rgba(255,255,255,1) 50%);
+	background-color: white;
 }
 
 #navbar a {
@@ -328,6 +328,7 @@ ul.steplist li.current a {
 	line-height: 1.5em;
 	font-size: .75rem;
 	z-index: 10;
+	background-color: white;
 }
 
 #leftSidebar {
@@ -653,39 +654,56 @@ hr {
 	#header {
 		min-height: 4rem;
 	}
-	#headerTitle h1 img {
-		display: none;
-		position: relative;
-	}
-	#headerTitle h1::before {
-		position: relative;
-		content: "Professions & Professionalism";
-		left: 4%;
-		margin-right: 1rem;
-	}
 	#headerTitle {
-		display: table;
-	}
-	#headerTitle h1 {
-		display: table-cell;
-		vertical-align: middle;
-		text-transform: none;
-		letter-spacing: 0.05em;
-		line-height: .85em;
-		font-size: 1.75rem;
-		padding-left: .5rem;
-		padding-right: 4rem;
-	}
-	#headerTitle,
-	#headerTitle h1 {
-		height: 4rem;
+		position: relative;
 		background-color: black;
 		background: linear-gradient(to bottom, #000000 0%, #000000 36%, #262626 74%, #444444 99%, #000000 100%);
+	}
+	#headerTitle a {
+		background-color: transparent;
+	}
+	#headerTitle h1 img {
+		display: none;
+	}
+	#headerTitle h1 {
+		line-height: 1em;
+		letter-spacing: normal;
+		margin: 0;
+	}
+	#headerTitle #insertedByHiOAscript {
+		display:block;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 4rem;
+		margin: auto;
+	}
+
+	.headerGroupProfessionsAmp {
+		position: relative;
+		bottom: -.18em;
+		right: 0;
+	}
+	.headerProfessions {
+		text-align: center;
+	}
+	.headerAmp {
+		position: absolute;
+		right: 100%;
+		bottom: 0;
+		font-size: .5em;
+		bottom: -.25em;
+	}
+	.headerProfessionalism {
+		position: relative;
+		top: -.18em;
+		display: block;
 	}
 	#header #headerTitle h1 {
 		background-image: none;
 	}
-	#headerTitle a {background-color: transparent;}
+
 	#navbar {
 		margin-right: 0rem;
 		padding-right: 0;
@@ -784,13 +802,17 @@ hr {
 /* Ultra Narrow Layout Start */
 
 @media screen and (max-width: 30em) {
-	#headerTitle h1 {
-		font-size: 1.25em;
-		/* Base font-size on viewport vidth if supported */
-		font-size: 7vw;
-	}
 	.hioaFooterLogo {display: none;}
 	.showMenu #sidebar #rightSidebar {right: 1rem; left: 1rem; width: auto;}
+}
+
+@media screen and (max-width: 20em) {
+	#headerTitle h1 {
+	font-size: 1.5em;
+	}
+	#headerTitle #insertedByHiOAscript {
+		padding-top: .25em;
+	}
 }
 
 /* Ultra Narrow Layout END */
@@ -968,6 +990,7 @@ hr {
 	font-family: helvetica, sans-serif;
 	margin-top: 1em;
 	margin-bottom: 1em;
+	line-height: 1.25em;
 }
 #pp-ojs-article div.section,
 #pp-ojs-article div.back-section {
@@ -1115,7 +1138,8 @@ hr {
 	display: block;
 	clear: both;
 	text-align: center;
-	margin-top: 2em;
+	margin-top: 1em;
+	line-height: 1em;
 }
 #pp-ojs-article div.abstract {
 	margin-top: 0.5em;

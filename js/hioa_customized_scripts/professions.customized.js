@@ -16,27 +16,22 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-// Fix FLEKS header to add proper markup for styling
-(function fixFLEKSHeaderHTML() {
+// Fix Professions header to add proper markup for styling
+(function fixProfessionsHeaderHTML() {
 	$(document).ready(function () {
 		var headerTitle = document.getElementById("headerTitle");
+		var insertSpan = document.createElement("span");
+		insertSpan.id = "insertedByHiOAscript";
 		var newHeaderHTML = '\
 <span class="headerGroupProfessionsAmp">\
 	<span class="headerProfessions">Professions</span>\
 	<span class="headerAmp">&amp;</span>\
 </span>\
 <span class="headerProfessionalism">Professionalism</span>';
-		var headerSearchPattern = /^professions/;
+		insertSpan.innerHTML = newHeaderHTML;
 		var headerTitleH1 = headerTitle.getElementsByTagName("h1")[0];
 		if (headerTitleH1 !== undefined) {
-			
-			// FIXME!
-			//add element child, don't replace inner html like this!!!
-			var oldHeader = headerTitleH1.textContent.trim().toLocaleLowerCase();
-			var isHeader = (headerSearchPattern.exec(oldHeader) !== null);
-			if (isHeader) {
-				headerTitleH1.innerHTML = newHeaderHTML;
-			}
+			headerTitleH1.appendChild(insertSpan);
 		}
 	});
 }());

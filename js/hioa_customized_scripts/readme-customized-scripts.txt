@@ -48,10 +48,7 @@ How to use:
 
 Professions & Professionalisms
 
-FIXME: should a script to insert html markup to be used in narrow layout instead of 
-abusing CSS ::after and ::before pseudo class to generate text with content: "";
-
-This script was initially requested by the Professions & Professionalisms journal.
+This first script was initially requested by the Professions & Professionalisms journal.
 It adds a "Search ths article on Google Scholar" link after Refbacks on the abstract page.
 This script can be used by the other journals as well.
 
@@ -60,6 +57,10 @@ Copy this code inside the footer (HTML edit mode):
 <!-- Add a "Search this article on Google Scholar" link after the Refbacks heading on the article abstract page -->
 <script type="text/javascript" src="/js/hioa_customized_scripts/search-this-article-on-google-scholar.js"></script>
 
+This second script is for Professions & Professionalisms only:
+
+<!-- Customized JavaScript for Professions & Professionalism: fix header styling markup -->
+<script type="text/javascript" src="/js/hioa_customized_scripts/professions.customized.js"></script>
 
 
 FORMakademisk

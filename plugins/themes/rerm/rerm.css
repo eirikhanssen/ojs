@@ -956,6 +956,7 @@ hr {
 	font-family: helvetica, sans-serif;
 	margin-top: 1em;
 	margin-bottom: 1em;
+	line-height: 1em;
 }
 #ojs-html-fulltext div.section,
 #ojs-html-fulltext div.back-section {
