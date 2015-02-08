@@ -24,8 +24,8 @@
 		insertSpan.id = "insertedByHiOAscript";
 		var newHeaderHTML = '\
 <span class="headerGroupProfessionsAmp">\
-	<span class="headerProfessions">Professions</span>\
-	<span class="headerAmp">&amp;</span>\
+	<span class="headerProfessions">Professions</span> \
+	<span class="headerAmp">&amp;</span> \
 </span>\
 <span class="headerProfessionalism">Professionalism</span>';
 		insertSpan.innerHTML = newHeaderHTML;

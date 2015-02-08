@@ -81,6 +81,7 @@ div.page_items_info {
 	min-height: 100px;
 	background-color: black;
 	position: relative;
+	background-image: url(https://journals.hioa.no/public/journals/2/ppheader-strip.png);
 }
 #headerTitle {
 	text-align: center;
@@ -88,17 +89,22 @@ div.page_items_info {
 }
 #headerTitle a {
 	text-decoration: none;
+	display: block;
+	background-color: transparent;
 }
 #headerTitle a:focus {
 	padding: 0;
 }
 #headerTitle a:focus h1 {color: orange;}
-#header h1 {
-	line-height: 2.5em;
+#header h1 { /*new*/
+	font-size: 2em;
+	line-height: 1.25em;
+	text-align: center;
+	padding: 1rem;
+	font-weight: normal;
 	font-family: "Times New Roman", Times, Georgia, serif;
 	font-variant: small-caps;
-	letter-spacing: 10px;
-	font-size: 2em;
+	/*letter-spacing: 10px;*/
 	background-color: #320;
 	color: #fff;
 }
@@ -203,7 +209,8 @@ ul.steplist li.current a {
 
 #breadcrumb,
 #content {
-	margin-right: 12rem; /*#pageFooterContentWrapper og #navbar må ha samme padding-right som denne margin-right */
+	/*#pageFooterContentWrapper og #navbar need padding-right that equals this margin-right */
+	margin-right: 12rem; 
 }
 
 #navbar {
@@ -211,7 +218,6 @@ ul.steplist li.current a {
 	margin-right: 0;
 	padding: 0;
 	padding-right: 11rem;
-	/*border-bottom: 1px solid #ddd;*/
 	border: none;
 	text-align: center;
 	background-color: white;
@@ -529,8 +535,8 @@ body {
 #header h1 {
 	padding: 0;
 	margin: 0;
-	background-color: black;
-	background-image: url(https://journals.hioa.no/public/journals/2/ppheader-strip.png);
+	background-color: transparent; /*new*/
+	
 }
 #header h1 img {
 	display: block;
@@ -587,7 +593,7 @@ hr {
 	width: 100%;
 	padding-bottom: 1rem;
 	border-top: 1px solid gray; /*#320;*/
-	margin-top: 2.25rem; /*eller 0?*/
+	margin-top: 2.25rem; /* or 0?*/
 	margin-left: -1rem;
 	padding-left: 1rem;
 	padding-right: 12rem;
@@ -604,10 +610,7 @@ hr {
 	/*border-bottom: 1px solid #320;*/
 }
 
-/* If #journalIssn that has it's own border, is present, #pageFooterContentWrapper doesn't need the border and margin */
-
 #journalIssn + #pageFooterContentWrapper {
-	/*border-top: none;*/
 	margin-top: 0;
 }
 #commonPageFooterContent,
@@ -655,7 +658,6 @@ hr {
 		min-height: 4rem;
 	}
 	#headerTitle {
-		position: relative;
 		background-color: black;
 		background: linear-gradient(to bottom, #000000 0%, #000000 36%, #262626 74%, #444444 99%, #000000 100%);
 	}
@@ -669,39 +671,25 @@ hr {
 		line-height: 1em;
 		letter-spacing: normal;
 		margin: 0;
+		margin-right: 4rem;
+		padding: 1rem 0;
 	}
 	#headerTitle #insertedByHiOAscript {
 		display:block;
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 4rem;
-		margin: auto;
+		line-height: .7em;
 	}
 
 	.headerGroupProfessionsAmp {
-		position: relative;
-		bottom: -.18em;
-		right: 0;
 	}
 	.headerProfessions {
 		text-align: center;
 	}
-	.headerAmp {
-		position: absolute;
-		right: 100%;
-		bottom: 0;
-		font-size: .5em;
-		bottom: -.25em;
-	}
+	.headerAmp {}
 	.headerProfessionalism {
-		position: relative;
-		top: -.18em;
-		display: block;
 	}
 	#header #headerTitle h1 {
-		background-image: none;
+		min-height: 4rem;
+		box-sizing: border-box;
 	}
 
 	#navbar {
@@ -789,35 +777,26 @@ hr {
 		background-color: white;
 		background-color: rgba(255, 255, 255, 0.95);
 	}
-	
 	.showMenu #sidebar #rightSidebar {
 		display: block;
 	}
-
 	/* menuToggle END */
-
 } /* Narrow Layout END */
 
-
 /* Ultra Narrow Layout Start */
-
 @media screen and (max-width: 30em) {
 	.hioaFooterLogo {display: none;}
 	.showMenu #sidebar #rightSidebar {right: 1rem; left: 1rem; width: auto;}
 }
-
 @media screen and (max-width: 20em) {
 	#headerTitle h1 {
 	font-size: 1.5em;
+	font-size: 9vw;
 	}
-	#headerTitle #insertedByHiOAscript {
-		padding-top: .25em;
-	}
+	#headerTitle #insertedByHiOAscript {}
 }
-
 /* Ultra Narrow Layout END */
 /* Hide/show menu END */
-
 /* Styles for HTML fulltext articles START */
 
 #pp-ojs-article p,
