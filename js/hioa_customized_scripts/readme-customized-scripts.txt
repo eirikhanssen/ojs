@@ -120,3 +120,10 @@ Copy this code inside the footer (HTML edit mode):
 <!-- Customized JavaScript for FLEKS: fix header styling markup -->
 <script type="text/javascript" src="/js/hioa_customized_scripts/fleks.customized.js"></script>
 
+Tidsskriftet Arkiv
+
+Copy this code inside the footer (HTML edit mode):
+
+<!-- Customized JavaScript for Tidsskriftet Arkiv: fix header styling markup -->
+<script type="text/javascript" src="/js/hioa_customized_scripts/arkiv.customized.js"></script>
+
