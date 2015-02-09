@@ -10,12 +10,10 @@
  *
  */
 
-html {margin: 0 .5rem;}
 a:link {
     text-decoration: underline;
     color: #0056cc;
 }
-
 
 a:visited {
 	color: #647a98;
@@ -46,29 +44,29 @@ body {
 }
 
 #container {
-    /*line-height: 1.5em;*/
     margin: 0 auto;
-    /* Important to allow for narrow layout */
-    /*min-width: auto !important;*/
-    min-width: inherit !important;
 }
 
 #footer {
     background-color: #fbfbfb;
 }
 #navbar {
-    border-right: none;
+    border-right: 1px solid gray;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
     border-left: 1px solid gray;
     text-align: center;
-    background-color: #fbfbfb
+    background-color: #fbfbfb;
+	box-sizing: border-box;
+	padding: 0;
+}
+@media screen and (min-width: 50em) {
+	#navbar {padding-right: 12rem;}
 }
 #navbar ul {
     display: block;
     background: transparent;
 }
-#navbar,
 #navbar li {
     padding: 0;
 }
@@ -81,6 +79,7 @@ body {
     font-weight: bold;
     color: #017795;
     display: inline-block;
+	text-transform: none;
 }
 #navbar .menu li a:hover {
     background-color: #ff6c00;
@@ -102,34 +101,44 @@ body {
     color: black;
     margin-left: 0;
     margin-right: 0;
+	width: 100%;
     padding: 0;
-    width: 85%;
     border: 0px solid gray;
     border-top: none;
-    margin-right: -1rem;
+	float: right;
 }
+/*
 #main > *:not(#navbar) {
     background-color: white;
     margin-right: 1rem;
     margin-left: 1rem;
     box-sizing: border-box;
-}
+}*/
+#breadcrumb, #main > h2 {margin-left: 1rem;}
 #content {
     font-size: .85rem;
     line-height: 1.65em;
-    margin: 0 .1rem;
+    margin: 0;
+	margin-right: 12rem;
+	margin-left: 1rem;
     border-top: none;
 }
+#rightSidebar, #leftSidebar {height: auto;}
 #rightSidebar {
-    position: relative;
-    background-color: #fbfbfb;
-    /* box-sizing: border-box;*/
-    /*width: 15%;*/
-    padding-left: .5rem;
-    padding-right: .5rem;
-    margin-left: -1rem;
-    margin-right: -2px;
+    box-sizing: border-box;
     border: 1px solid gray;
+	position: relative;
+	padding: .5rem;
+	padding-bottom: 1em;
+	width: 11rem;
+	margin: 0;
+	margin-left: -12rem;
+	box-sizing: border-box;
+	line-height: 1.5em;
+	font-size: .75rem;
+	z-index: 10;
+	background-color: #fbfbfb;
+	line-height: 1.5em;
 }
 #rightSidebar td {
     display: block;
@@ -176,28 +185,44 @@ body {
     background-color: #017795;
     position: relative;
     min-height: 113px;
+	box-sizing: border-box;
 }
 
-#header a {text-decoration: none; min-height: 113px; display: table; width: 100%;}
+#header a {display: block; text-decoration: none; margin: 0; padding: 0;}
 
 #header {
-    background-image: url("./open-access-transp-bg-609x113.png");
+    background-image: url("./open-access-transp-bg-609x113_without_OA-icon.png");
     background-position: top right;
     background-repeat: no-repeat;
     /* Fill height, keep aspect ratio for width */
     background-size: auto 100%;
+}
+#header::before {
+	content: "";
+	top: auto;
+	left: auto;
+	bottom: 0.25rem;
+	right: 4rem;
+	margin: auto;
+	position: absolute;
+	z-index: -1;
+	width:3rem;
+	height: 3rem;
+	background-image: url(openAccessIcon78x122.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 #headerTitle {
     background-image: url("./hioalogo-en-semi-transp113x113.png");
     background-position: 1rem center;
     background-repeat: no-repeat;
     box-sizing: border-box; padding-left: 2rem;
-    min-height: 113px;
+    height: 113px;
 }
 
 #header h1 {
-    display: table-cell;
-    vertical-align: middle;
+    display: block;
     line-height: 1em;
     padding-left: 113px;
     padding-right: .5rem;
@@ -206,6 +231,9 @@ body {
     font-size: 2.5rem;
     font-family: "Times New Roman", Times, serif;
     text-shadow: 0 0 5px black;
+	text-align: left;
+	min-height: 113px;
+	padding-top: 1rem;
 }
 
 /* Site index header END */
@@ -215,6 +243,7 @@ body {
 #pageFooter {
     margin-top: 3rem;
     margin-bottom: 1rem;
+	font-size: .85em;
 }
 #commonPageFooterContent,
 #journalPageFooterContent {
@@ -277,3 +306,129 @@ body {
 
 /* FOOTER END */
 
+/* Narrow layout */
+
+@media screen and (max-width: 50em) {
+	/* narrow HEADER START*/
+	#header {
+		position: relative;
+		height: 4rem;
+	}
+	#headerTitle h1 {
+		padding-right: 4rem;
+		font-size: 2rem;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		text-shadow: 0 0 2px black;
+	}
+	#header a {
+	}
+	/* narrow HEADER END */
+	#navbar {
+		margin-right: 0rem;
+		padding-right: 0;
+		border-right: none;
+		border-left: none;
+	}
+	#content,
+	#breadcrumb {
+		margin-right: 1rem;
+	}
+	/* menuToggle START */
+	#menuToggle {
+		box-sizing: border-box;
+		position: absolute;
+		z-index: 5;
+		top: 0;
+		bottom: 0;
+		right: .25rem;
+		margin: auto 0;
+		width: 3.5rem;
+		height: 3.5rem;
+		border: 1px solid gray;
+		border-radius: .25rem;
+		background-color: #ccc;
+	}
+	#obscureLayer {
+		z-index: 3;
+	}
+	.showMenu #obscureLayer {
+		display: block !important;
+	}
+	#menuToggle:hover {
+		background-color: #ddd;
+		box-shadow: 0 0 .5rem white;
+	}
+	#menuToggle::before,
+	#menuToggle::after {
+		position: absolute;
+		margin: auto;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		content: "";
+		width: 75%;
+		box-sizing: border-box;
+		z-index: 0;
+	}
+	#menuToggle::before {
+		height: 75%;
+		border-top: .4rem solid black;
+		border-bottom: .4rem solid black;
+	}
+	#menuToggle::after {
+		height: .4rem;
+		border-radius: .2rem;
+		background-color: black;
+	}
+	.showMenu #menuToggle::after {
+		background-color: orange;
+	}
+	.showMenu #menuToggle {
+		background-color: white;
+	}
+	#rightSidebar {
+		display: none;
+		margin: 0 auto;
+		position: absolute;
+		z-index: 10;
+		right: .75em;
+		width: 15rem;
+		box-sizing: border-box;
+		border-radius: .25rem;
+		box-shadow: 0 0 .5rem rgba(0,0,0,0.5);
+		background-color: white;
+		padding-bottom: 1em;
+	}
+	.showMenu #sidebar #rightSidebar {
+		display: block;
+	}
+	/* menuToggle END */
+}
+/* Narrow Layout END */
+
+@media screen and (max-width: 30em) {
+	#headerTitle {background-size: auto 75%;}
+	#headerTitle h1 {
+		padding-left: 85px;
+		font-size: 1.5rem;
+		/* Base font-size on viewport vidth if supported */
+		font-size: 7vw;
+	}
+	.hioaFooterLogo {
+		display: none;
+	}
+	.showMenu #sidebar #rightSidebar {
+		right: 1rem;
+		left: 1rem;
+		width: auto;
+	}
+}
+/* Ultra Narrow Layout END */
+
+/* MISC */
+#inlinePdfResizer {
+	height: auto;
+	min-height: 400px;
+}
