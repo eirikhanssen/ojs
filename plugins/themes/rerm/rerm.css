@@ -180,13 +180,15 @@ ul.steplist li {
 ul.steplist li.current a {
 	color: black;
 }
-/* #navbar START */
-
-#breadcrumb,
 #content {
 	margin-right: 12rem;
 	/*#pageFooterContentWrapper og #navbar må ha samme padding-right som denne margin-right */
 }
+
+/* #navbar START */
+
+/*#breadcrumb,*/
+
 #navbar {
 	margin-left: 0;
 	margin-right: 0;
@@ -312,7 +314,7 @@ ul.steplist li.current a {
 	line-height: 1.5em;
 	font-size: .75rem;
 	z-index: 10;
-	background-color: transparent;
+	background-color: white;
 }
 #leftSidebar {
 	font-size: .75rem;
@@ -555,6 +557,7 @@ hr {
 .headerInitial {
 	font-weight: bold; color: #ffba00;
 	font-size: 1.15em;
+	text-shadow: 0 0 1px black, 0 0 1px black, 0 0 2px black;
 }
 /* HEADER END */
 
@@ -767,7 +770,7 @@ hr {
 	}
 	#headerTitle .headerInitial {
 		display: inline;
-		text-shadow: 0 0 1px black;
+		text-shadow: 0 0 1px black, 0 0 2px black;
 	}
 }
 @media screen and (max-width: 30em) {

@@ -301,6 +301,9 @@ ul.steplist li.current a {
 #rightSidebar div.block span.blockSubtitle {
 	font-weight: bold;
 }
+
+#rightSidebar, #leftSidebar {height: auto;}
+
 #rightSidebar {
 	position: relative;
 	padding: .25rem 0rem;
