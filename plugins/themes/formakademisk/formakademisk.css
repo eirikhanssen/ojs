@@ -629,3 +629,9 @@ a.pdf:hover {
 	}
 }
 /* Ultra Narrow Layout END */
+
+/* MISC */
+#inlinePdfResizer {
+	height: auto;
+	min-height: 400px;
+}

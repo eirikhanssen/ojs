@@ -1287,3 +1287,9 @@ hr {
 	}
 }
 /* Print stylesheet END */
+
+/* MISC */
+#inlinePdfResizer {
+	height: auto;
+	min-height: 400px;
+}

@@ -1267,3 +1267,9 @@ font-size: 4vw;
 	}
 }
 /* Print stylesheet END */
+
+/* MISC */
+#inlinePdfResizer {
+	height: auto;
+	min-height: 400px;
+}
