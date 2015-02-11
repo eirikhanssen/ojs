@@ -29,6 +29,7 @@ a:focus {
 	color: #ffffff;
 }
 
+#header a img, #pageFooter a img {border: none;}
 
 a:active {
     background-color: #ff0;
@@ -59,9 +60,13 @@ body {
     background-color: #fbfbfb;
 	box-sizing: border-box;
 	padding: 0;
+	padding-right: 12em;
+	padding-right: 12rem;
 }
-@media screen and (min-width: 50em) {
-	#navbar {padding-right: 12rem;}
+@media screen and (max-width: 50em) {
+	#navbar {
+		padding-right: 0;
+	}
 }
 #navbar ul {
     display: block;
@@ -71,10 +76,12 @@ body {
     padding: 0;
 }
 #navbar li + li {
+	margin-left: .25em;
     margin-left: .25rem;
 }
 #navbar li a {
     text-decoration: none;
+	padding: .5em .75em;
     padding: .5rem .75rem;
     font-weight: bold;
     color: #017795;
@@ -114,28 +121,38 @@ body {
     margin-left: 1rem;
     box-sizing: border-box;
 }*/
-#breadcrumb, #main > h2 {margin-left: 1rem;}
+#breadcrumb, #main > h2 {
+	margin-left: 1em;
+	margin-left: 1rem;
+}
 #content {
+	font-size: .85em;
     font-size: .85rem;
     line-height: 1.65em;
     margin: 0;
+	margin-right: 16em;
 	margin-right: 12rem;
+	margin-left: 1.18em;
 	margin-left: 1rem;
     border-top: none;
 }
 #rightSidebar, #leftSidebar {height: auto;}
 #rightSidebar {
-    box-sizing: border-box;
-    border: 1px solid gray;
+	font-size: .75em;
+	font-size: .75rem;
+	box-sizing: border-box;
+	border: 1px solid gray;
 	position: relative;
+	padding: 0.67em;
 	padding: .5rem;
 	padding-bottom: 1em;
+	width: 14.67em;
 	width: 11rem;
 	margin: 0;
+	margin-left: -16em;
 	margin-left: -12rem;
 	box-sizing: border-box;
 	line-height: 1.5em;
-	font-size: .75rem;
 	z-index: 10;
 	background-color: #fbfbfb;
 	line-height: 1.5em;
@@ -217,23 +234,28 @@ body {
     background-image: url("./hioalogo-en-semi-transp113x113.png");
     background-position: 1rem center;
     background-repeat: no-repeat;
-    box-sizing: border-box; padding-left: 2rem;
+    box-sizing: border-box;
+	padding-left: 1em;
+	padding-left: 2rem;
     height: 113px;
 }
 
 #header h1 {
+	font-size: 2.5em;
+	font-size: 2.5rem;
+	padding-top: .4em;
+	padding-top: 1rem;
+	padding-right: .2em;
+	padding-right: .5rem;
     display: block;
     line-height: 1em;
     padding-left: 113px;
-    padding-right: .5rem;
     color: white;
     font-weight: bold;
-    font-size: 2.5rem;
     font-family: "Times New Roman", Times, serif;
     text-shadow: 0 0 5px black;
 	text-align: left;
 	min-height: 113px;
-	padding-top: 1rem;
 }
 
 /* Site index header END */
@@ -241,9 +263,11 @@ body {
 /* FOOTER START */
 
 #pageFooter {
-    margin-top: 3rem;
-    margin-bottom: 1rem;
 	font-size: .85em;
+	margin-top: 3.53em;
+	margin-top: 3rem;
+	margin-bottom: 1.18em;
+	margin-bottom: 1rem;
 }
 #commonPageFooterContent,
 #journalPageFooterContent {
@@ -258,10 +282,14 @@ body {
     width: 33%;
 }
 #pageFooterContentWrapper {
-    float: left;
-    clear: left;
-    width: 100%;
-    margin-bottom: 1rem;
+	float: left;
+	clear: left;
+	width: 100%;
+	margin-bottom: 1.18em;
+	margin-bottom: 1rem;
+	border-top: 2px solid #aaa;
+	margin-top: 2.65em;
+	margin-top: 2.25rem;
 }
 #commonPageFooterContent {
     clear: left;
@@ -273,7 +301,6 @@ body {
     border-bottom: 2px solid #006699;
 }
 
-#pageFooterContentWrapper {border-top: 2px solid #aaa; margin-top: 2.25rem;}
 /* If #journalIssn that has it's own border, is present, #pageFooterContentWrapper doesn't need the border and margin */
 #journalIssn + #pageFooterContentWrapper {border-top: none; margin-top: 0;}
 
@@ -288,6 +315,7 @@ body {
 
 #pageFooter img.hioaFooterLogo {
     float: left;
+	margin-right: 1.18em;
     margin-right: 1rem;
 }
 

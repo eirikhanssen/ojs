@@ -181,17 +181,21 @@ ul.steplist li {
 ul.steplist li.current a {
 	color: black;
 }
+
 /* #navbar START */
 
 #breadcrumb,
 #content {
+	margin-right: 17em;
 	margin-right: 12rem;
+	margin-left: 1em;
 	/*#pageFooterContentWrapper og #navbar må ha samme padding-right som denne margin-right */
 }
 #navbar {
 	margin-left: 0;
 	margin-right: 0;
 	padding: 0;
+	padding-right: 11em;
 	padding-right: 11rem;
 	/*border-bottom: 1px solid #ddd;*/
 	border: none;
@@ -218,11 +222,13 @@ ul.steplist li.current a {
 	padding: 0;
 }
 #navbar li + li {
+	margin-left: .25em;
 	margin-left: .25rem;
 }
 #navbar li a {
 	text-decoration: none;
 	font-family: sans-serif;
+	padding: .5em .75em;
 	padding: .4rem .5rem;
 	margin: 0;
 	color: #320;
@@ -304,19 +310,24 @@ ul.steplist li.current a {
 }
 #rightSidebar {
 	position: relative;
-	padding: .25rem 0rem;
+	font-size: .75em;
+	font-size: .75rem;
+	line-height: 1.5em;
+	padding: .34em 0;
+	padding: .25rem 0;
 	padding-bottom: 1em;
+	width: 14.67em;
 	width: 11rem;
 	margin: 0;
+	margin-left: -16em;
 	margin-left: -12rem;
 	box-sizing: border-box;
-	line-height: 1.5em;
-	font-size: .75rem;
 	z-index: 10;
 	/*background-color: "f9f9f9";*/
 }
 
 #leftSidebar {
+	font-size: .75em;
 	font-size: .75rem;
 }
 #rightSidebar td {
@@ -331,6 +342,7 @@ ul.steplist li.current a {
 #sidebarLanguageToggle select#languageSelect,
 #sidebarLanguageToggle input.button {
 	width: 100%;
+	padding: .33em;
 	padding: .25rem;
 	box-sizing: border-box;
 }
@@ -340,9 +352,11 @@ ul.steplist li.current a {
 	margin: 0;
 }
 #sidebarLanguageToggle input.button {
+	margin-top: .66em;
 	margin-top: .5rem;
 }
 #sidebar tr + tr td:first-child {
+	margin-top: .66em;
 	margin-top: .5rem;
 }
 #sidebarDevelopedBy {
@@ -350,9 +364,11 @@ ul.steplist li.current a {
 }
 #sidebar ul,
 #sidebar ol {
+	padding-left: 1em;
 	padding-left: 1rem;
 }
 #sidebar form {
+	margin-top: .33em;
 	margin-top: .25rem;
 }
 /* siteindex styles for rightsidebar END */
@@ -488,13 +504,15 @@ body {
 	display: block;
 	font-size: 2em;
 	margin-top: 1em;
-	margin-right: .5rem;
+	margin-right: 6em;
+	margin-right: 12rem;
 	margin-bottom: .5rem;
+	margin-left: 1em;
 	margin-left: 1rem;
 }
-@media screen and (min-width: 50em) {
+@media screen and (max-width: 50em) {
 	#main h2 {
-		margin-right: 12rem;
+		margin-right: .5rem;
 	}
 }
 body {
@@ -550,6 +568,8 @@ hr {
 }
 #headerTitle h1 img {}
 
+#header a img, #pageFooter a img {border: none;}
+
 /* Hide from sighted users, but not from screen reader users */
 #headerTitle h1 .mainHeaderTitle, 
 #headerTitle h1 .subHeaderTitle {
@@ -582,7 +602,10 @@ hr {
 /* FOOTER START */
 
 #pageFooter {
+	font-size: 0.9em;
+	margin-top: 4.44em;
 	margin-top: 2rem;
+	margin-bottom: 2.22em;
 	margin-bottom: 1rem;
 	font-family: Arial, sans-serif;
 	font-size: 0.9em;
@@ -644,7 +667,9 @@ hr {
 }
 #pageFooter img.hioaFooterLogo {
 	float: left;
+	margin-right: 1.18em;
 	margin-right: 1rem;
+
 }
 .hioaFooterLogo {
 	width: 50px;
