@@ -359,9 +359,6 @@ ul.steplist li.current a {
 	margin-top: .66em;
 	margin-top: .5rem;
 }
-#sidebarDevelopedBy {
-	display: none;
-}
 #sidebar ul,
 #sidebar ol {
 	padding-left: 1em;

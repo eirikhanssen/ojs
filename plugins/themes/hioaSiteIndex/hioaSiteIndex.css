@@ -186,9 +186,6 @@ body {
 #sidebarLanguageToggle input.button {
     margin-top: .5rem;
 }
-#sidebarDevelopedBy {
-    display: none;
-}
 /* Site index header START */
 
 #header {
