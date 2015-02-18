@@ -70,6 +70,8 @@ input.defaultButton {
 	padding: 0;
 }
 
+#main h2, #main h3 {margin-top: 1em;}
+
 #main h2 {margin-left: .5em;}
 #breadcrumb {
 	margin-left: 1em;
