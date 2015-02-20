@@ -20,10 +20,12 @@
     $(document).ready(function () {
         var headerTitle = document.getElementById("headerTitle");
         var newHeaderHTML = 'Nordisk Barnehageforskning<span class="enTitle">Nordic Early Childhood Education Research</span>';
+		var headerSearchPattern = /^nordisk barnehageforskning/;
         var headerTitleH1 = headerTitle.getElementsByTagName("h1")[0];
         if (headerTitleH1 !== undefined) {
             var oldHeader = headerTitleH1.textContent.trim().toLocaleLowerCase();
-            if (oldHeader === 'nordisk barnehageforskning') {
+			var isHeader = (headerSearchPattern.exec(oldHeader) !== null);
+            if (isHeader) {
                 headerTitleH1.innerHTML = newHeaderHTML;
             }
         }
