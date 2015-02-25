@@ -19,7 +19,7 @@
 (function fixNBFHeaderHTML() {
     $(document).ready(function () {
         var headerTitle = document.getElementById("headerTitle");
-        var newHeaderHTML = 'Nordisk Barnehageforskning<span class="enTitle">Nordic Early Childhood Education Research</span>';
+        var newHeaderHTML = 'Nordisk BarnehageForskning<span class="enTitle">Nordic Early Childhood Education Research</span>';
 		var headerSearchPattern = /^nordisk barnehageforskning/;
         var headerTitleH1 = headerTitle.getElementsByTagName("h1")[0];
         if (headerTitleH1 !== undefined) {
