@@ -454,6 +454,5 @@ body {
 
 /* MISC */
 #inlinePdfResizer {
-	height: auto;
-	min-height: 400px;
+	min-height: 600px;
 }
