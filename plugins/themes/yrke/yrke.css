@@ -1,0 +1,95 @@
+#headerTitle h1 {
+letter-spacing: 0;
+line-height: 1.25em;
+text-transform: uppercase;
+padding: .5em;
+}
+
+#headerTitle h1 span {
+margin-top: .5em;
+font-size: .75em;
+display: block;
+text-transform: none;}
+
+/* hide the repeating header on the journal's home-page*/
+body#pkp-common-openJournalSystems.home #main #breadcrumb + h2 {display:none;}
+
+#main {border-top: none; margin-top: 0; border-bottom: none;}
+#breadcrumb {border-bottom: none;}
+
+#content {font-size: .9em;}
+
+/* FOOTER START */
+
+#pageFooter {
+	font-size: .85em;
+	margin-top: 3.53em;
+	margin-top: 3rem;
+	margin-bottom: 1.18em;
+	margin-bottom: 1rem;
+}
+#commonPageFooterContent,
+#journalPageFooterContent {
+    float: left;
+    margin: 0;
+    border: 0;
+}
+#commonPageFooterContent {
+    width: 66%;
+}
+#journalPageFooterContent {
+    width: 33%;
+}
+#pageFooterContentWrapper {
+	float: left;
+	clear: left;
+	width: 100%;
+	border-top: 2px solid #006699;
+	margin-bottom: 1.18em;
+	margin-bottom: 1rem;
+	margin-top: 2.65em;
+	margin-top: 2.25rem;
+}
+#commonPageFooterContent {
+    clear: left;
+}
+#journalIssn {
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid #ccc;
+    border-bottom: 2px solid #006699;
+}
+
+#pageFooterContentWrapper {}
+/* If #journalIssn that has it's own border, is present, #pageFooterContentWrapper doesn't need the border and margin */
+#journalIssn + #pageFooterContentWrapper {border-top: none; margin-top: 0;}
+
+#commonPageFooterContent,
+#hostedBy,
+#cookiePolicy,
+#journalPageFooterContent {
+    width: 100%;
+    clear: both;
+    float: left;
+}
+
+#pageFooter img.hioaFooterLogo {
+	float: left;
+	margin-right: 1.18em;
+	margin-right: 1rem;
+}
+
+#hostedByHioaLSB {display: table;}
+#hostedByHioaLSB span {display: table-cell; vertical-align: middle;}
+
+@media screen and (min-width: 720px) {
+    #cookiePolicy {
+        width: auto;
+        max-width: 35%;
+        clear: none;
+        float: right;
+    }
+    #hostedBy {max-width: 65%;}
+}
+
+/* FOOTER END */
