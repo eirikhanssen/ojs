@@ -247,12 +247,12 @@ body {
     display: block;
     line-height: 1em;
     padding-left: 113px;
-    color: white;
     font-weight: bold;
     font-family: "Times New Roman", Times, serif;
     text-shadow: 0 0 5px black;
 	text-align: left;
 	min-height: 113px;
+	box-sizing: border-box;
 }
 
 /* Site index header END */
