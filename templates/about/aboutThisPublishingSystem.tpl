@@ -23,6 +23,10 @@
 {/if}
 </p>
 
+<h3>{translate key="about.ojsDocAndUserGuideHeading"}</h3>
+{translate key="about.ojsDocAndUserGuideDescription"}
+{translate key="about.ojsDocAndUserGuideLinks"}
+
 <p align="center">
 	<img src="{$baseUrl}/{$edProcessFile}" style="border: 0;" alt="{translate key="about.aboutThisPublishingSystem.altText"}" />
 </p>

@@ -676,7 +676,11 @@ nåværende passordet.<br /><br />Skriv inn e-postadressen din nedenfor for å t
 	<message key="about.aboutThisPublishingSystem">Om dette publiseringssystemet</message>
 	<message key="about.aboutOJSJournal"><![CDATA[Dette tidsskriftet bruker Open Journal Systems {$ojsVersion}, som er open source-programvare for tidskriftsadministrasjon og publisering. OJS er utviklet, støttet, og fritt distribuert av <a href="http://pkp.sfu.ca/">Public Knowledge Project</a> under GNU General Public License.]]></message>
 	<message key="about.aboutOJSSite"><![CDATA[Dette nettstedet bruker Open Journal Systems {$ojsVersion}, som er open source programvare for tidskriftsadministrasjon og publisering. OJS er utviklet, støttet, og fritt distribuert av <a href="http://pkp.sfu.ca/">Public Knowledge Project</a> under GNU General Public License.]]></message>
-	
+
+	<message key="about.ojsDocAndUserGuideHeading">OJS dokumentasjon og brukerveiledning</message>
+	<message key="about.ojsDocAndUserGuideDescription"><![CDATA[<p>Oppdatert dokumentasjon finnes i <a href="http://pkp.sfu.ca/wiki/index.php">Public Knowledge Project wiki</a>. For OJS spesifikk dokumentasjon, følg lenkene under:</p>]]></message>
+	<message key="about.ojsDocAndUserGuideLinks"><![CDATA[<ul><li><a href="https://pkp.sfu.ca/wiki/index.php?title=OJS_Documentation">OJS Documentation</a></li><li><a href="http://pkp.sfu.ca/wiki/index.php?title=OJS_Userguide">OJS Userguide</a></li></ul>]]></message>
+
 	<!-- Announcement -->
 
 	<!-- Help -->

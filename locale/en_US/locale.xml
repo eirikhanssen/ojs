@@ -883,6 +883,10 @@ current password.<br /><br />Enter your email address below to reset your passwo
 	<message key="about.aboutOJSJournal"><![CDATA[This journal uses Open Journal Systems {$ojsVersion}, which is open source journal management and publishing software developed, supported, and freely distributed by the <a href="http://pkp.sfu.ca/">Public Knowledge Project</a> under the GNU General Public License.]]></message>
 	<message key="about.aboutOJSSite"><![CDATA[This site uses Open Journal Systems {$ojsVersion}, which is open source journal management and publishing software developed, supported, and freely distributed by the <a href="http://pkp.sfu.ca/">Public Knowledge Project</a> under the GNU General Public License.]]></message>
 
+	<message key="about.ojsDocAndUserGuideHeading">OJS Documentation and User Guide</message>
+	<message key="about.ojsDocAndUserGuideDescription"><![CDATA[<p>The most current and up to date documentation will be found in the <a href="http://pkp.sfu.ca/wiki/index.php">Public Knowledge Project wiki</a>. For OJS specific documentation, follow the links below:</p>]]></message>
+	<message key="about.ojsDocAndUserGuideLinks"><![CDATA[<ul><li><a href="https://pkp.sfu.ca/wiki/index.php?title=OJS_Documentation">OJS Documentation</a></li><li><a href="http://pkp.sfu.ca/wiki/index.php?title=OJS_Userguide">OJS Userguide</a></li></ul>]]></message>
+
 	<!-- Announcement -->
 
 	<!-- Help -->
