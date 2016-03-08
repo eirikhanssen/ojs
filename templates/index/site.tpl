@@ -39,12 +39,14 @@
 	{if $site->getSetting('showTitle')}
 		<h3 class="journalLocalizedTitle">{$journal->getLocalizedTitle()|escape}</h3>
 	{/if}
+	<div class="journalDescription">
 	{if $site->getSetting('showDescription')}
 		{if $journal->getLocalizedDescription()}
 			{$journal->getLocalizedDescription()|nl2br}
 		{/if}
 	{/if}
-	<p><a href="{url journal=$journal->getPath()}" class="action">{translate key="site.journalView"}</a> | <a href="{url journal=$journal->getPath() page="issue" op="current"}" class="action">{translate key="site.journalCurrent"}</a> | <a href="{url journal=$journal->getPath() page="user" op="register"}" class="action">{translate key="site.journalRegister"}</a></p>
+	</div>
+	<p class="journalLinks"><a href="{url journal=$journal->getPath()}" class="action">{translate key="site.journalView"}</a> | <a href="{url journal=$journal->getPath() page="issue" op="current"}" class="action">{translate key="site.journalCurrent"}</a> | <a href="{url journal=$journal->getPath() page="user" op="register"}" class="action">{translate key="site.journalRegister"}</a></p>
 	</div>
 {/iterate}
 </div>
