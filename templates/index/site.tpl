@@ -24,8 +24,9 @@
 {if $useAlphalist}
 	<p>{foreach from=$alphaList item=letter}<a href="{url searchInitial=$letter sort="title"}">{if $letter == $searchInitial}<strong>{$letter|escape}</strong>{else}{$letter|escape}{/if}</a> {/foreach}<a href="{url}">{if $searchInitial==''}<strong>{translate key="common.all"}</strong>{else}{translate key="common.all"}{/if}</a></p>
 {/if}
-
+<div class="journalBlocks">
 {iterate from=journals item=journal}
+	<div class="journalBlock">
 	{if $site->getSetting('showThumbnail')}
 		{assign var="displayJournalThumbnail" value=$journal->getLocalizedSetting('journalThumbnail')}
 		<div class="homepageThumbImageContainer" style="clear:left;">
@@ -44,7 +45,9 @@
 		{/if}
 	{/if}
 	<p><a href="{url journal=$journal->getPath()}" class="action">{translate key="site.journalView"}</a> | <a href="{url journal=$journal->getPath() page="issue" op="current"}" class="action">{translate key="site.journalCurrent"}</a> | <a href="{url journal=$journal->getPath() page="user" op="register"}" class="action">{translate key="site.journalRegister"}</a></p>
+	</div>
 {/iterate}
+</div>
 {if $journals->wasEmpty()}
 	{translate key="site.noJournals"}
 {/if}
