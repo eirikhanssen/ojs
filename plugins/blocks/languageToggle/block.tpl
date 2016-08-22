@@ -24,11 +24,10 @@
 		{rdelim}
 		//-->
 	</script>
-	<span class="blockTitle">{translate key="common.language"}</span>
 	<form action="#">
-		<label for="languageSelect">{translate key="plugins.block.languageToggle.selectLabel"}</label>
+		<label for="languageSelect"><span class="blockTitle">{translate key="common.language"}</span></label>
 		<select id="languageSelect" {if $isPostRequest}disabled="disabled" {/if}size="1" name="locale" class="selectMenu">{html_options options=$languageToggleLocales selected=$currentLocale}</select>
-		<input type="submit" class="button" value="{translate key='form.submit'}" onclick="changeLanguage(); return false;" />
+		<input type="submit" class="button" value="{translate key='hioamod.changeLanguageButton'}" onclick="changeLanguage(); return false;" />
 	</form>
 </div>
 {/if}
