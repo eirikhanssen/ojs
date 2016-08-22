@@ -1113,5 +1113,6 @@ Authors who publish with this journal agree to the following terms:
     <message key="hioamod.footer.privacypolicyheader">Personvernerklæring</message>
     <message key="hioamod.footer.aboutcookieusagelink"><![CDATA[<a class="no_NO" href="/help/cookies-no_NO.html">Om informasjonskapsler på journals.hioa.no</a>]]></message>
     <message key="hioamod.footer.hioalogolink">/public/site/images/hioalogo-white-on-black-100px-no_NO.png</message>
+    <message key="hioamod.changeLanguageButton">Bytt språk</message>
 </locale>
 
