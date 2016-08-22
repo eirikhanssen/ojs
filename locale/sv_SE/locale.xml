@@ -1165,4 +1165,5 @@ The paragraph that begins "This last topic..." is not indented.</pre>]]></messag
     <message key="hioamod.footer.privacypolicyheader">Personvernerklæring</message>
     <message key="hioamod.footer.aboutcookieusagelink"><![CDATA[<a class="no_NO" href="/help/cookies-no_NO.html">Om informasjonskapsler på journals.hioa.no</a>]]></message>
     <message key="hioamod.footer.hioalogolink">/public/site/images/hioalogo-white-on-black-100px-no_NO.png</message>
+    <message key="hioamod.changeLanguageButton">Ändra språk</message>
 </locale>
