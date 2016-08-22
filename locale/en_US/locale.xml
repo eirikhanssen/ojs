@@ -1198,4 +1198,5 @@ Validation may fail on search URLs that require posted form data.]]></message>
     <message key="hioamod.footer.privacypolicyheader">Privacy policy</message>
     <message key="hioamod.footer.aboutcookieusagelink"><![CDATA[<a class="en_US" href="/help/cookies-en_US.html">About cookie usage at journals.hioa.no</a>]]></message>
     <message key="hioamod.footer.hioalogolink">/public/site/images/hioalogo-white-on-black-100px-en_US.png</message>
+    <message key="hioamod.changeLanguageButton">Change Language</message>
 </locale>
