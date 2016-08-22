@@ -132,6 +132,7 @@ class ViewReportPlugin extends ReportPlugin {
 				foreach ($galleysResult as $galleyRecord) {
 					$galleyId = $galleyRecord[STATISTICS_DIMENSION_ASSOC_ID];
 					$galley =& $galleyDao->getGalley($galleyId);
+					if (!$galley) continue;
 					$label = $galley->getGalleyLabel();
 					$i = array_search($label, $galleyLabels);
 					if ($i === false) {
